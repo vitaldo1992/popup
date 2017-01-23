@@ -1,0 +1,421 @@
+.mysites {
+	width: 100%;
+	display: block;
+	overflow: block;
+	margin: 0;
+}
+.mysites .title {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	margin:0 0 50px 0;
+}
+.mysites .title h2 {
+	float: left;
+    text-align: left;
+    width: 100%;
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.mysites .title p {
+	float: left;
+    text-align: left;
+    width: 100%;
+    color: #585858;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 15px 0 0;
+}
+.mysites .list {
+	width: 100%;
+	display: block;
+	overflow: visible;
+}
+.mysites .list li {
+	padding: 0;
+	float: left;
+	cursor: pointer;
+	width: 372px;
+	height: 440px;
+	border-radius: 5px;
+	border: 2px solid #e4e6f0;
+	margin:0 20px 20px 0;
+	background-color: #fff;
+	position: relative;
+	-o-transition:all 0.15s ease-in-out;
+	-ms-transition:all 0.15s ease-in-out;
+	-moz-transition:all 0.15s ease-in-out;
+	-webkit-transition:all 0.15s ease-in-out;
+			transition:all 0.15s ease-in-out;
+}
+.mysites .list li:nth-child(3n){
+	margin:0 0 20px 0;
+}
+.mysites .list li.last:hover {
+	border: 2px solid #526acc;
+}
+.mysites .list li:hover {
+	background-color: #526acc;
+	border: 2px solid #526acc;
+	-o-transition:all 0.15s ease-in-out;
+	-ms-transition:all 0.15s ease-in-out;
+	-moz-transition:all 0.15s ease-in-out;
+	-webkit-transition:all 0.15s ease-in-out;
+			transition:all 0.15s ease-in-out;
+			border: 2px solid #526acc;
+	box-shadow: 0px 6px 16.7px 1.3px rgba(14, 14, 14, 0.16);
+}
+.mysites .list li:hover .constructor{
+	border: 1px solid #fff;
+    color: #fff;
+}
+.mysites .list li:hover .preview{
+    color: #fff;
+}
+.mysites .list li:hover .img-holder {
+	background: url(../images/img-mysite-hov.png) 50% 50% no-repeat; 
+}
+.mysites .list li:hover .text {
+	width:312px;
+	padding:30px 0;
+	margin: 0 30px;
+	border-top: 2px solid #e4e6f0;
+}
+.mysites .list li:hover .text .choice{
+	right: 2px;
+	color: #fff;
+}
+.mysites .list li:hover .text h4{
+	color: #fff;
+}
+.mysites .list li:hover .text p{
+	color: #fff;
+}
+.mysites .list li:hover .top .title {
+	color: #fff;
+}
+.mysites .list li:hover .text .sub-title {
+	color: #fff;
+}
+.mysites .list li:hover .text .banner {
+	color: #fff;
+}
+.mysites .list li .top .title {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	color: #222222;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 37px;
+	text-align: center;
+}
+.mysites .list li .text .sub-title {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	color: #222222;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 50px;
+	text-align: center;
+}
+.mysites .list li .text .banner {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	color: #222222;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 50px;
+	text-align: center;
+}
+.mysites .list li .top {
+	display: block;
+	overflow: hidden;
+	width: 308px;
+	padding: 32px 32px 0;
+}
+.mysites .list li .constructor {
+    float: left;
+  	width: 117px;
+	height: 37px;
+	border-radius: 18px;
+	border: 1px solid #000000;
+	line-height: 37px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.mysites .list li .preview {
+	float: right;
+	text-decoration: underline;
+    color: #3d3d3d;
+	font-size: 14px;
+	font-weight: 700;
+    line-height: 37px;
+	z-index: 100;
+}
+.mysites .list li .img-holder {
+	width: 100%;
+	height: 260px;
+	display: flex;
+	overflow: hidden;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	background: url(../images/img-mysite-01.png) 50% 50% no-repeat; 
+}
+.mysites .list li .img-holder img {
+	display: block;
+	overflow: hidden;
+}
+.mysites .list li .text {
+	width:312px;
+	height:50px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding:30px;
+	margin: 0;
+	border-top: 2px solid #e4e6f0;
+}
+.mysites .list li .text h4 {
+	width:100%;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	margin:0 0 5px;
+	display: block;
+	overflow: hidden;
+}
+.mysites .list li .text p {
+	width:100%;
+	display: block;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #3d3d3d;
+}
+.mysites .list li .text .choice {
+	position:absolute;
+	display: block;
+	bottom:22px;
+	margin: 0 0 0;
+	right:32px;
+	text-decoration: underline;
+    color: #000;
+    color: #3d3d3d;
+	font-size: 14px;
+	font-weight: 700;
+    line-height: 37px;
+	z-index: 100;
+}
+.mysites .tabs {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 -2px;
+	position: relative;
+	z-index: 100;
+}
+.mysites .tabs li {
+	float: left;
+	padding: 0 0 23px;
+	margin: 0 30px 0 0;
+	border-bottom: 2px solid #dbdbdb;
+}
+.mysites .tabs li a {
+	color: #78909c;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.mysites .tabs li.active a {color: #3db8da;}
+.mysites .tabs li.active {
+	border-bottom: 3px solid #3db8da;
+	padding: 0 0 22px;
+}
+.mysites  form {
+	float: left;
+	width:914px;
+	margin:0 0 0 0;
+}
+.mysites form .row {
+	width: 914px;
+	float: left;
+	margin:0 0 60px;
+	position: relative;
+}
+.mysites form .row .col {
+	float: left;
+	width: 270px;
+	margin: 0 60px 0 0;
+}
+.mysites form .row .col.right {
+	margin: 0;
+	width: 584px;
+}
+.mysites form .row h3 {
+	color: #121212;
+	font-size: 16px;
+	font-weight: 600;
+	display:block;
+	overflow: hidden;
+	margin: 0 0 15px;
+	width: 100%;
+}
+.mysites form .row p {
+	color: #7b7b7b;
+	font-size: 13px;
+	font-weight: 400;
+	display:block;
+	overflow: hidden;
+	margin: 0 0 15px;
+	width: 100%;
+}
+.mysites form .row label {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0 15px;
+	color: #4e4e4e;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+	color: #4e4e4e;
+}
+.mysites form .row .txt:focus {border: 1px solid #3db8da;}
+.mysites form .row .txt {
+	width: 550px;
+	padding:0 16px;
+	float: left;
+	text-align: left;
+	height:45px;
+	line-height: 45px;
+	color: #4e4e4e;
+	font-size: 14px;
+	background: none;
+	font-weight: 400;
+	border-radius: 3px;
+	border: 1px solid #e4e6f0;
+	background-color: #fbfbfd;
+}
+.mysites form .row .txt.small {
+	width:427px;
+	border-radius: 3px 0 0 3px;
+}
+.mysites form .save {
+  	width: 224px;
+	height: 45px;
+	border-radius: 5px;
+	background-color: #23d28a;
+	border: 1px solid #23d28a;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 0 0;
+    float: left;
+}
+.mysites form .save:hover {
+	background-color: #1fba7a ;
+}
+.mysites form .save.active {
+	background-color: #1a9864 ;
+}
+.mysites form .row .domen {
+	width: 122px;
+	height: 45px;
+	border-radius:0 3px 3px 0;
+	border-top: 1px solid #f0f2fa;
+	border-bottom: 1px solid #f0f2fa;
+	border-right: 1px solid #f0f2fa;
+	border-left:none;
+	background-color: #f0f2fa;
+	float: left;
+	color: #4e4e4e;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 45px;
+	text-align: center;
+}
+.mysites form .row .description {
+	display: block;
+	overflow: hidden;
+	width:365px;
+	padding: 30px 100px 35px 120px;
+	border-radius: 3px;
+}
+.mysites form .row .description.host {
+	background:#f0f2fa url(../images/img-set-01.png) 32px 30px no-repeat; 
+}
+.mysites form .row .description h4 {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	color: #121212;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 15px;
+}
+.mysites form .row .description p {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	color: #7b7b7b;
+	margin: 0 0 20px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.mysites form .activate {
+    text-align: center;
+    cursor: pointer;
+    background-color: #3db8da;
+    color: #e2e2e2;
+    font-size: 13px;
+	font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+	width: 195px;
+	height: 45px;
+	padding: 0 0 0 50px;
+	margin: 0 12px 0 0;
+	border-radius: 3px;
+	border: 2px solid #e2e2e2;
+	cursor: pointer;
+	background: url(../images/radio-pas.png) 8px 50% no-repeat !important;
+}
+.mysites form .activate:hover,
+.mysites form .activate.active {
+	border: 2px solid #52ac62;
+	color: #1b1b1b;
+	background: url(../images/radio-check.png) 8px 50% no-repeat !important;
+}
+
+
+
+
+
+
+
+.mysites form .row p span{
+	color: #526acc;
+	font-weight: 600;
+}

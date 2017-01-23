@@ -1,0 +1,1708 @@
+/*//////////////////////////////// --LEFT-SIDE-- ////////////////////////////*/
+/*//////////////////////////////// --LEFT-SIDE-- ////////////////////////////*/
+/*//////////////////////////////// --LEFT-SIDE-- ////////////////////////////*/
+/*//////////////////////////////// --LEFT-SIDE-- ////////////////////////////*/
+.preloaded {
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	background-image: -moz-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: -ms-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: -o-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: -webkit-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: linear-gradient(45deg, #E06AA3, #E38871);
+	opacity: 0;
+	z-index: 0;
+}
+.preloaded .preload-image {
+	text-align: center;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 12%;
+	top: 38%;
+}
+.preloaded .preload-image img {
+	width: 29%;
+	height: auto;
+}
+.postloader {
+	z-index: 7;
+	opacity: 0;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: -moz-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: -ms-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: -o-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: -webkit-linear-gradient(45deg, #E06AA3, #E38871);
+	background-image: linear-gradient(45deg, #E06AA3, #E38871);
+}
+.postloader .preload-image {
+	text-align: center;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 12%;
+	top: 38%;
+}
+.postloader .preload-image img {
+	position: relative;
+	display: inline;
+	width: 29%;
+	height: auto;
+}
+.progress-bar {
+	z-index: 11;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 1.111%;
+	background-image: -moz-linear-gradient(to right, #E06AA3, #E38871);
+	background-image: -ms-linear-gradient(to right, #E06AA3, #E38871);
+	background-image: -o-linear-gradient(to right, #E06AA3, #E38871);
+	background-image: -webkit-linear-gradient(to right, #E06AA3, #E38871);
+	background-image: linear-gradient(to right, #E06AA3, #E38871);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffa554', endColorstr = '#ff3690');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffa554', endColorstr = '#ff3690')";
+	-webkit-transition: width ease-out 1.5s;
+	-moz-transition: width ease-out 1.5s;
+	-o-transition: width ease-out 1.5s;
+	transition: width ease-out 1.5s;
+}
+.first-progress {width: 25%;}
+.second-progress {width: 50%;}
+.third-progress {width: 100%;}
+#form-container {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5FA;
+	z-index: 0;
+}
+#form-container .form-wrapper {
+	z-index: 8;
+	opacity: 1;
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 1050px;
+	height: 100%;
+}
+#form-container .form-wrapper .left {
+	top: 29%;
+	width: 50%;
+	height: 70%;
+	display: block;
+	position: absolute;
+	right: 50%;
+	z-index: 8;
+}
+#form-container .form-wrapper .left .step {
+	opacity: 0;
+	color: #2C2C2C;
+	position: absolute;
+	height: 37%;
+	width: auto;
+	right: 0;
+	background-color: inherit;
+}
+#form-container .form-wrapper .left .first-step {
+	opacity: 0;
+	z-index: 0;
+	width: 100%;
+}
+#form-container .form-wrapper .left .second-step {
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+.active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#form-container .form-wrapper .left .active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#form-container .form-wrapper .left .step .enter-value {
+	font: 26px 'Roboto', sans-serif;
+}
+#form-container .form-wrapper .left .step .enter-value-comment {
+	box-sizing: border-box;
+	font: 15px 'Roboto', sans-serif;
+	line-height: 1;
+	margin-top: 18px;
+}
+#form-container .form-wrapper .left .step .input-container {
+	height: 40px;
+	color: #758DA2;
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	padding-left: 3px;
+	cursor: text;
+	font: 14px 'Roboto', sans-serif;
+}
+#form-container .form-wrapper .left .step .input-container input {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font: 15px 'Roboto', sans-serif;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #c5d9e8;
+	background-color: inherit;
+	outline: none;
+	padding: 8px 20px 10px 0;
+	width: 86%;
+}
+#form-container .form-wrapper .left .step .input-container input:focus 		{ outline:none; }
+/* LABEL ======================================= */
+#form-container .form-wrapper .left .step .input-container label {
+	color:#758da2;
+	font-size: 15px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	top:10px;
+	left: 0;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+/* active state */
+#form-container .form-wrapper .left .step .input-container .input-item:focus ~ label, 
+#form-container .form-wrapper .left .step .input-container .input-item:valid ~ label {
+	top: -16px;
+	left: 0;
+	font-size: 11px;
+	color: #0093ee;
+}
+/* BOTTOM BARS ================================= */
+#form-container .form-wrapper .left .step .input-container .bar {
+	left: 0;
+	bottom: 0;
+	position:absolute;
+	display:block;
+	width:86%;
+}
+#form-container .form-wrapper .left .step .input-container .bar .bar-span	{
+	transform: scaleX(0);
+	content: "";
+	display: block;
+	border-bottom: solid 2px #0093ee;
+	transition: transform 250ms;
+}
+/* active state */
+#form-container .form-wrapper .left .step .input-container input:focus ~ .bar .bar-span {
+	transform: scaleX(1);
+}
+#form-container .form-wrapper .left .step .input-container .bar .scaled_bar {
+	border-bottom: solid 2px #0093ee;
+	transform: scaleX(1);
+}
+/* active state */
+#form-container .form-wrapper .left .step .input-container .icon_container {
+	height: 50%;
+	width: 50px;
+	color: #BE5C61;
+	position: absolute;
+	right: 14%;
+	bottom: 10%;
+}
+#form-container .form-wrapper .left .step .input-container .icon_container .input-item-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+#form-container .form-wrapper .left .step .input-container .icon_container .show-password-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	display: none;
+	float: right;
+	cursor: pointer;
+	background: no-repeat url(../images/eye-none.png) top right;
+}
+#form-container .form-wrapper .left .step .input-container .icon_container .show-password-icon:hover {
+	background: no-repeat url(../images/eye-icon.png) top right;
+}
+#form-container .form-wrapper .left .step .input-container .required {
+	height: 100%;
+	background: none;
+}
+#form-container .form-wrapper .left .step .input-container .required:before {
+	content: '*';
+	position: absolute;
+	top: 0%;
+	left: 45%;
+}
+#form-container .form-wrapper .left .step .input-container .success {
+	background: no-repeat url('../images/success-icon.png') right top;
+}
+#form-container .form-wrapper .left .step .input-container .error {
+	background: no-repeat url('../images/error-icon.png') right top;
+}
+#form-container .form-wrapper .left .step .input-container .error-input {
+	border-color: red;
+}
+#form-container .form-wrapper .left .step .input-container .success-input {
+	border-color: #0093ee;
+}
+#form-container .form-wrapper .left .step .first-name {
+	margin-top: 70px;
+}
+#form-container .form-wrapper .left .step .next {
+	margin-top: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	width: 145px;
+	height: 45px;
+	font: 16px 'Roboto', sans-serif;
+	border-radius: 3px;
+	border: none;
+	background-color: #0093EE;
+	color: #FFFFFF;
+}
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+#form-container .form-wrapper .right {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	right: 0;
+	top: 0;
+	text-align: center;
+}
+#form-container .form-wrapper .right .task-container {
+	font: 18px 'Roboto', sans-serif;
+	margin: 44% auto auto 14%;
+	text-align: left;
+	width: 420px;
+	display: block;
+}
+#form-container .form-wrapper .right .task-container .user-task {
+	color: #A1A1A4;
+	display: inline-block;
+	width: 100%;
+	background-color: inherit;
+	padding: 20px;
+	-webkit-transition: color, background-color ease-out 0.5s;
+	-moz-transition: color, background-color ease-out 0.5s;
+	-o-transition: color, background-color ease-out 0.5s;
+	transition: color, background-color ease-out 0.5s;
+}
+#form-container .form-wrapper .right .task-container .active-task {
+	color: #2C2C2C;
+	background-color: #EEEEF3;
+}
+#form-container .form-wrapper .right .task-container .clickable_user-task {
+	cursor: pointer;
+}
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+#form-container .form-wrapper .left .step .e-mail {
+	position: relative;
+	margin-top: 60px;
+}
+#form-container .form-wrapper .left .step .e-mail label {
+	left: 0;
+	top: -16px;
+	font-size: 11px;
+	color: #0093ee;
+}
+#form-container .form-wrapper .left .step .e-mail input {
+	color: #64647A;
+}
+@media screen and (min-width: 2400px) {
+	#form-container .form-wrapper {	width: 1200px;}
+	#form-container .form-wrapper .left {
+		top: 40%;
+		height: 59%;
+	}
+}
+@media (min-width: 1330px) and (max-width: 1900px) {
+	#form-container .form-wrapper {	width: 900px;}
+	#form-container .form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#form-container .form-wrapper .left .step .enter-value {
+		font: 20px 'Roboto', sans-serif;
+	}
+	#form-container .form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 12px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#form-container .form-wrapper .left .step .input-container {
+		height: 35px;
+		margin-top: 20px;
+	}
+	#form-container .form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#form-container .form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#form-container .form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#form-container .form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#form-container .form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#form-container .form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#form-container .form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#form-container .form-wrapper .left .step .input-container .icon_container {
+		bottom: 20%;
+	}
+	#form-container .form-wrapper .left .step .first-name {
+		margin-top: 55px;
+	}
+	#form-container .form-wrapper .left .step .next {
+		margin-top: 40px;
+		width: 125px;
+		height: 40px;
+		font: 14px 'Roboto', sans-serif;
+	}
+	#form-container .form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 350px;
+	}
+	#form-container .form-wrapper .right .task-container .user-task {
+		padding: 15px;
+	}
+}
+@media screen (min-width: 1200px) and (max-width: 1329px) {
+	#form-container .form-wrapper {	width: 800px;}
+	#form-container .form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#form-container .form-wrapper .left .step .enter-value {
+		font: 20px 'Roboto', sans-serif;
+	}
+	#form-container .form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 11px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#form-container .form-wrapper .left .step .input-container {
+		height: 30px;
+		margin-top: 20px;
+	}
+	#form-container .form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#form-container .form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#form-container .form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#form-container .form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#form-container .form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#form-container .form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#form-container .form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#form-container .form-wrapper .left .step .input-container .icon_container {
+		bottom: 25%;
+	}
+	#form-container .form-wrapper .left .step .first-name {
+		margin-top: 40px;
+	}
+	#form-container .form-wrapper .left .step .next {
+		margin-top: 35px;
+		width: 115px;
+		height: 35px;
+		font: 13px 'Roboto', sans-serif;
+	}
+	#form-container .form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 300px;
+	}
+	#form-container .form-wrapper .right .task-container .user-task {
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	#form-container .form-wrapper .right {
+		display: none;
+	}
+	#form-container .form-wrapper .left {
+		right: 25%;
+	}
+}
+#logining-container {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5FA;
+	z-index: 0;
+}
+#logining-container .logining-form-wrapper {
+	z-index: 8;
+	opacity: 1;
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 1050px;
+	height: 100%;
+}
+#logining-container .logining-form-wrapper .left {
+	top: 29%;
+	width: 50%;
+	height: 70%;
+	display: block;
+	position: absolute;
+	right: 50%;
+	z-index: 8;
+}
+#logining-container .logining-form-wrapper .left .step {
+	opacity: 0;
+	color: #2C2C2C;
+	position: absolute;
+	height: 37%;
+	width: auto;
+	right: 0;
+	background-color: inherit;
+}
+#logining-container .logining-form-wrapper .left .first-step {
+	opacity: 0;
+	z-index: 0;
+	width: 100%;
+}
+#logining-container .logining-form-wrapper .left .second-step {
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+.active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#logining-container .logining-form-wrapper .left .active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#logining-container .logining-form-wrapper .left .step .enter-value {
+	font: 26px 'Roboto', sans-serif;
+}
+#logining-container .logining-form-wrapper .left .step .enter-value-comment {
+	box-sizing: border-box;
+	font: 15px 'Roboto', sans-serif;
+	line-height: 1;
+	margin-top: 18px;
+}
+#logining-container .logining-form-wrapper .left .step .input-container {
+	height: 40px;
+	color: #758DA2;
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	padding-left: 3px;
+	cursor: text;
+	font: 14px 'Roboto', sans-serif;
+}
+#logining-container .logining-form-wrapper .left .step .input-container input {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font: 15px 'Roboto', sans-serif;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #c5d9e8;
+	background-color: inherit;
+	outline: none;
+	padding: 8px 20px 10px 0;
+	width: 86%;
+}
+
+#logining-container .logining-form-wrapper .left .step .input-container input:focus	{ outline:none; }
+/* LABEL ======================================= */
+#logining-container .logining-form-wrapper .left .step .input-container label {
+	color:#758da2;
+	font-size: 15px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	top:10px;
+	left: 0;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+/* active state */
+#logining-container .logining-form-wrapper .left .step .input-container .input-item:focus ~ label, 
+#logining-container .logining-form-wrapper .left .step .input-container .input-item:valid ~ label {
+	top: -16px;
+	left: 0;
+	font-size: 11px;
+	color: #0093ee;
+}
+/* BOTTOM BARS ================================= */
+#logining-container .logining-form-wrapper .left .step .input-container .bar {
+	left: 0;
+	bottom: 0;
+	position:absolute;
+	display:block;
+	width:86%;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .bar .bar-span	{
+	transform: scaleX(0);
+	content: "";
+	display: block;
+	border-bottom: solid 2px #0093ee;
+	transition: transform 250ms;
+}
+/* active state */
+#logining-container .logining-form-wrapper .left .step .input-container input:focus ~ .bar .bar-span {
+	transform: scaleX(1);
+}
+#logining-container .logining-form-wrapper .left .step .input-container .bar .scaled_bar {
+	border-bottom: solid 2px #0093ee;
+	transform: scaleX(1);
+}
+/* active state */
+#logining-container .logining-form-wrapper .left .step .input-container .icon_container {
+	height: 50%;
+	width: 50px;
+	color: #BE5C61;
+	position: absolute;
+	right: 14%;
+	bottom: 10%;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .icon_container .input-item-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .icon_container .show-password-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	display: none;
+	float: right;
+	cursor: pointer;
+	background: no-repeat url(../images/eye-none.png) top right;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .icon_container .forgot-password {
+	display: inline-block;
+	color: #2c2c2c;
+	font-size: 12px;
+	float: right;
+	cursor: pointer;
+	position: relative;
+	padding-left: 10px;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .icon_container .forgot-password:hover {
+	color: #0093EE;
+}
+#logining-container .logining-form-wrapper .left .step .password-user .icon_container {
+	width: 140px;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .icon_container .show-password-icon:hover {
+	background: no-repeat url(../images/eye-icon.png) top right;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .required {
+	padding-left: 3px;
+	height: 100%;
+	background: none;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .required:before {
+	content: '*';
+	position: absolute;
+	top: 0%;
+	left: 45%;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .success {
+	padding-left: 3px;
+	background: no-repeat url('../images/success-icon.png') right top;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .error {
+	padding-left: 3px;
+	background: no-repeat url('../images/error-icon.png') right top;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .error-input {
+	border-color: red;
+}
+#logining-container .logining-form-wrapper .left .step .input-container .success-input {
+	border-color: #0093ee;
+}
+#logining-container .logining-form-wrapper .left .step .welcom-back {
+	margin-top: 70px;
+}
+#logining-container .logining-form-wrapper .left .step .next {
+	margin-top: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	width: 145px;
+	height: 45px;
+	font: 16px 'Roboto', sans-serif;
+	border-radius: 3px;
+	border: none;
+	background-color: #0093EE;
+	color: #FFFFFF;
+}
+#logining-container .logining-form-wrapper .left .forgot-password-step .enter-value-comment {
+	line-height: 24px;
+}
+#logining-container .logining-form-wrapper .left .forgot-password-step .input-container {
+	margin-top: 40px;
+}
+#logining-container .logining-form-wrapper .left .your-email-send {
+	width: 120%;
+	z-index: 6;
+}
+#logining-container .logining-form-wrapper .left .your-email-send .enter-value-comment {
+	line-height: 24px;
+}
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+#logining-container .logining-form-wrapper .right {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	right: 0;
+	top: 0;
+	text-align: center;
+}
+#logining-container .logining-form-wrapper .right .task-container {
+	font: 18px 'Roboto', sans-serif;
+	margin: 44% auto auto 14%;
+	text-align: left;
+	width: 420px;
+	display: block;
+}
+#logining-container .logining-form-wrapper .right .task-container .user-task {
+	color: #A1A1A4;
+	display: inline-block;
+	width: 100%;
+	background-color: inherit;
+	padding: 20px;
+	-webkit-transition: color, background-color ease-out 0.5s;
+	-moz-transition: color, background-color ease-out 0.5s;
+	-o-transition: color, background-color ease-out 0.5s;
+	transition: color, background-color ease-out 0.5s;
+}
+#logining-container .logining-form-wrapper .right .task-container .active-task {
+	color: #2C2C2C;
+	background-color: #EEEEF3;
+}
+#logining-container .logining-form-wrapper .right .task-container .clickable_user-task {
+	cursor: pointer;
+}
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+#logining-container .logining-form-wrapper .left .step .e-mail {
+	position: relative;
+	margin-top: 60px;
+}
+#logining-container .logining-form-wrapper .left .step .e-mail label {
+	left: 0;
+	top: -16px;
+	font-size: 11px;
+	color: #0093ee;
+}
+#logining-container .logining-form-wrapper .left .step .e-mail input {
+	color: #64647A;
+}
+@media screen and (min-width: 2400px) {
+	#logining-container .logining-form-wrapper {width: 1200px;}
+	#logining-container .logining-form-wrapper .left {
+		top: 40%;
+		height: 59%;
+	}
+}
+@media (min-width: 1330px) and (max-width: 1900px) {
+	#logining-container .logining-form-wrapper {width: 900px;}
+	#logining-container .logining-form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#logining-container .logining-form-wrapper .left .step .enter-value {
+		font: 20px 'Roboto', sans-serif;
+	}
+	#logining-container .logining-form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 12px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container {
+		height: 35px;
+		margin-top: 20px;
+	}
+	#logining-container .logining-form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#logining-container .logining-form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#logining-container .logining-form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#logining-container .logining-form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container .icon_container {
+		bottom: 20%;
+	}
+	#logining-container .logining-form-wrapper .left .step .welcom-back {
+		margin-top: 55px;
+	}
+	#logining-container .logining-form-wrapper .left .step .next {
+		margin-top: 40px;
+		width: 125px;
+		height: 40px;
+		font: 14px 'Roboto', sans-serif;
+	}
+	#logining-container .logining-form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 350px;
+	}
+	#logining-container .logining-form-wrapper .right .task-container .user-task {
+		padding: 15px;
+	}
+}
+@media screen (min-width: 1200px) and (max-width: 1329px) {
+	#logining-container .logining-form-wrapper {width: 800px;}
+	#logining-container .logining-form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#logining-container .logining-form-wrapper .left .step .enter-value {
+		font: 20px 'Roboto', sans-serif;
+	}
+	#logining-container .logining-form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 11px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container {
+		height: 30px;
+		margin-top: 20px;
+	}
+	#logining-container .logining-form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#logining-container .logining-form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#logining-container .logining-form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#logining-container .logining-form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#logining-container .logining-form-wrapper .left .step .input-container .icon_container {
+		bottom: 25%;
+	}
+	#logining-container .logining-form-wrapper .left .step .welcom-back {
+		margin-top: 40px;
+	}
+	#logining-container .logining-form-wrapper .left .step .next {
+		margin-top: 35px;
+		width: 115px;
+		height: 35px;
+		font: 13px 'Roboto', sans-serif;
+	}
+	#logining-container .logining-form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 300px;
+	}
+	#logining-container .logining-form-wrapper .right .task-container .user-task {
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	#logining-container .logining-form-wrapper .right {	display: none;}
+	#logining-container .logining-form-wrapper .left {	right: 25%;	}
+}
+#create-new-password-form-container {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5FA;
+	z-index: 0;
+}
+#create-new-password-form-container .form-wrapper {
+	z-index: 8;
+	opacity: 1;
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 1050px;
+	height: 100%;
+}
+#create-new-password-form-container .form-wrapper .left {
+	top: 29%;
+	width: 50%;
+	height: 70%;
+	display: block;
+	position: absolute;
+	right: 50%;
+	z-index: 8;
+}
+#create-new-password-form-container .form-wrapper .left .step {
+	opacity: 0;
+	color: #2C2C2C;
+	position: absolute;
+	height: 37%;
+	width: auto;
+	right: 0;
+	background-color: inherit;
+}
+#create-new-password-form-container .form-wrapper .left .first-step {
+	opacity: 0;
+	z-index: 0;
+	width: 100%;
+}
+#create-new-password-form-container .form-wrapper .left .second-step {
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+.active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#create-new-password-form-container .form-wrapper .left .active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#create-new-password-form-container .form-wrapper .left .step .enter-value {
+	font: 26px 'Roboto', sans-serif;
+}
+#create-new-password-form-container .form-wrapper .left .step .enter-value-comment {
+	box-sizing: border-box;
+	font: 15px 'Roboto', sans-serif;
+	line-height: 1;
+	margin-top: 18px;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container {
+	height: 40px;
+	color: #758DA2;
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	padding-left: 3px;
+	cursor: text;
+	font: 14px 'Roboto', sans-serif;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container input {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font: 15px 'Roboto', sans-serif;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #c5d9e8;
+	background-color: inherit;
+	outline: none;
+	padding: 8px 20px 10px 0;
+	width: 86%;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container input:focus 		{ outline:none; }
+/* LABEL ======================================= */
+#create-new-password-form-container .form-wrapper .left .step .input-container label {
+	color:#758da2;
+	font-size: 15px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	top:10px;
+	left: 0;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+/* active state */
+#create-new-password-form-container .form-wrapper .left .step .input-container .input-item:focus ~ label, 
+#create-new-password-form-container .form-wrapper .left .step .input-container .input-item:valid ~ label {
+	top: -16px;
+	left: 0;
+	font-size: 11px;
+	color: #0093ee;
+}
+/* BOTTOM BARS ================================= */
+#create-new-password-form-container .form-wrapper .left .step .input-container .bar {
+	left: 0;
+	bottom: 0;
+	position:absolute;
+	display:block;
+	width:86%;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .bar .bar-span	{
+	transform: scaleX(0);
+	content: "";
+	display: block;
+	border-bottom: solid 2px #0093ee;
+	transition: transform 250ms;
+}
+/* active state */
+#create-new-password-form-container .form-wrapper .left .step .input-container input:focus ~ .bar .bar-span {
+	transform: scaleX(1);
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .bar .scaled_bar {
+	border-bottom: solid 2px #0093ee;
+	transform: scaleX(1);
+}
+/* active state */
+#create-new-password-form-container .form-wrapper .left .step .input-container .icon_container {
+	height: 50%;
+	width: 50px;
+	color: #BE5C61;
+	position: absolute;
+	right: 14%;
+	bottom: 10%;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .icon_container .input-item-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .icon_container .show-password-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	display: none;
+	float: right;
+	cursor: pointer;
+	background: no-repeat url(../images/eye-none.png) top right;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .icon_container .show-password-icon:hover {
+	background: no-repeat url(../images/eye-icon.png) top right;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .required {
+	height: 100%;
+	background: none;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .required:before {
+	content: '*';
+	position: absolute;
+	top: 0%;
+	left: 45%;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .success {
+	background: no-repeat url('../images/success-icon.png') right top;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .error {
+	background: no-repeat url('../images/error-icon.png') right top;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .error-input {
+	border-color: red;
+}
+#create-new-password-form-container .form-wrapper .left .step .input-container .success-input {
+	border-color: #0093ee;
+}
+#create-new-password-form-container .form-wrapper .left .step .first-name {
+	margin-top: 70px;
+}
+#create-new-password-form-container .form-wrapper .left .step .next {
+	margin-top: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	width: 145px;
+	height: 45px;
+	font: 16px 'Roboto', sans-serif;
+	border-radius: 3px;
+	border: none;
+	background-color: #0093EE;
+	color: #FFFFFF;
+}
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+#create-new-password-form-container .form-wrapper .right {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	right: 0;
+	top: 0;
+	text-align: center;
+}
+#create-new-password-form-container .form-wrapper .right .task-container {
+	font: 18px 'Roboto', sans-serif;
+	margin: 44% auto auto 14%;
+	text-align: left;
+	width: 420px;
+	display: block;
+}
+#create-new-password-form-container .form-wrapper .right .task-container .user-task {
+	color: #A1A1A4;
+	display: inline-block;
+	width: 100%;
+	background-color: inherit;
+	padding: 20px;
+	-webkit-transition: color, background-color ease-out 0.5s;
+	-moz-transition: color, background-color ease-out 0.5s;
+	-o-transition: color, background-color ease-out 0.5s;
+	transition: color, background-color ease-out 0.5s;
+}
+#create-new-password-form-container .form-wrapper .right .task-container .active-task {
+	color: #2C2C2C;
+	background-color: #EEEEF3;
+}
+#create-new-password-form-container .form-wrapper .right .task-container .clickable_user-task {
+	cursor: pointer;
+}
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+#create-new-password-form-container .form-wrapper .left .step .e-mail {
+	position: relative;
+	margin-top: 60px;
+}
+#create-new-password-form-container .form-wrapper .left .step .e-mail label {
+	left: 0;
+	top: -16px;
+	font-size: 11px;
+	color: #0093ee;
+}
+#create-new-password-form-container .form-wrapper .left .step .e-mail input {
+	color: #64647A;
+}
+@media screen and (min-width: 2400px) {
+	#create-new-password-form-container .form-wrapper {	width: 1200px;}
+	#create-new-password-form-container .form-wrapper .left {
+		top: 40%;
+		height: 59%;
+	}
+}
+@media (min-width: 1330px) and (max-width: 1900px) {
+	#create-new-password-form-container .form-wrapper {	width: 900px;}
+	#create-new-password-form-container .form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .enter-value {
+		font: 20px 'Roboto', sans-serif;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 12px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container {
+		height: 35px;
+		margin-top: 20px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#create-new-password-form-container .form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container .icon_container {
+		bottom: 20%;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .first-name {
+		margin-top: 55px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .next {
+		margin-top: 40px;
+		width: 125px;
+		height: 40px;
+		font: 14px 'Roboto', sans-serif;
+	}
+	#create-new-password-form-container .form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 350px;
+	}
+	#create-new-password-form-container .form-wrapper .right .task-container .user-task {
+		padding: 15px;
+	}
+}
+@media screen (min-width: 1200px) and (max-width: 1329px) {
+	#create-new-password-form-container .form-wrapper {	width: 800px;}
+	#create-new-password-form-container .form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .enter-value {font: 20px 'Roboto', sans-serif;}
+	#create-new-password-form-container .form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 11px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container {
+		height: 30px;
+		margin-top: 20px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#create-new-password-form-container .form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .input-container .icon_container {
+		bottom: 25%;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .first-name {
+		margin-top: 40px;
+	}
+	#create-new-password-form-container .form-wrapper .left .step .next {
+		margin-top: 35px;
+		width: 115px;
+		height: 35px;
+		font: 13px 'Roboto', sans-serif;
+	}
+	#create-new-password-form-container .form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 300px;
+	}
+	#create-new-password-form-container .form-wrapper .right .task-container .user-task {
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	#create-new-password-form-container .form-wrapper .right {display: none;}
+	#create-new-password-form-container .form-wrapper .left {right: 25%;}
+}
+#email-invalid-container {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5FA;
+	z-index: 0;
+}
+#email-invalid-container .email-invalid-form-wrapper {
+	z-index: 8;
+	opacity: 1;
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 1050px;
+	height: 100%;
+}
+#email-invalid-container .email-invalid-form-wrapper .left {
+	top: 29%;
+	width: 50%;
+	height: 70%;
+	display: block;
+	position: absolute;
+	right: 50%;
+	z-index: 8;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step {
+	opacity: 0;
+	color: #2C2C2C;
+	position: absolute;
+	height: 37%;
+	width: auto;
+	right: 0;
+	background-color: inherit;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .first-step {
+	opacity: 0;
+	z-index: 0;
+	width: 100%;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .second-step {
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+.active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .active-step {
+	opacity: 1;
+	z-index: 10;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .enter-value {
+	font: 26px 'Roboto', sans-serif;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .enter-value-comment {
+	box-sizing: border-box;
+	font: 15px 'Roboto', sans-serif;
+	line-height: 1;
+	margin-top: 18px;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container {
+	height: 40px;
+	color: #758DA2;
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	padding-left: 3px;
+	cursor: text;
+	font: 14px 'Roboto', sans-serif;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container input {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font: 15px 'Roboto', sans-serif;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #c5d9e8;
+	background-color: inherit;
+	outline: none;
+	padding: 8px 20px 10px 0;
+	width: 86%;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container input:focus 		{ outline:none; }
+/* LABEL ======================================= */
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container label {
+	color:#758da2;
+	font-size: 15px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	top:10px;
+	left: 0;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+/* active state */
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .input-item:focus ~ label, #email-invalid-container .email-invalid-form-wrapper .left .step .input-container .input-item:valid ~ label {
+	top: -16px;
+	left: 0;
+	font-size: 11px;
+	color: #0093ee;
+}
+/* BOTTOM BARS ================================= */
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .bar {
+	left: 0;
+	bottom: 0;
+	position:absolute;
+	display:block;
+	width:86%;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .bar .bar-span	{
+	transform: scaleX(0);
+	content: "";
+	display: block;
+	border-bottom: solid 2px #0093ee;
+	transition: transform 250ms;
+}
+/* active state */
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container input:focus ~ .bar .bar-span {
+	transform: scaleX(1);
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .bar .scaled_bar {
+	border-bottom: solid 2px #0093ee;
+	transform: scaleX(1);
+}
+/* active state */
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .icon_container {
+	height: 50%;
+	width: 50px;
+	color: #BE5C61;
+	position: absolute;
+	right: 14%;
+	bottom: 10%;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .icon_container .input-item-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .icon_container .show-password-icon {
+	height: 100%;
+	width: 15px;
+	color: #BE5C61;
+	position: relative;
+	display: inline-block;
+	display: none;
+	float: right;
+	cursor: pointer;
+	background: no-repeat url(../images/eye-none.png) top right;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .icon_container .show-password-icon:hover {
+	background: no-repeat url(../images/eye-icon.png) top right;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .required {
+	height: 100%;
+	background: none;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .required:before {
+	content: '*';
+	position: absolute;
+	top: 0%;
+	left: 45%;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .success {
+	background: no-repeat url('../images/success-icon.png') right top;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .error {
+	background: no-repeat url('../images/error-icon.png') right top;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .error-input {
+	border-color: red;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .success-input {
+	border-color: #0093ee;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .first-name {
+	margin-top: 70px;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .next {
+	margin-top: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	width: 145px;
+	height: 45px;
+	font: 16px 'Roboto', sans-serif;
+	border-radius: 3px;
+	border: none;
+	background-color: #0093EE;
+	color: #FFFFFF;
+}
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+/*/////////////////--RIGHT-SIDE--////////////////////*/
+#email-invalid-container .email-invalid-form-wrapper .right {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	right: 0;
+	top: 0;
+	text-align: center;
+}
+#email-invalid-container .email-invalid-form-wrapper .right .task-container {
+	font: 18px 'Roboto', sans-serif;
+	margin: 44% auto auto 14%;
+	text-align: left;
+	width: 420px;
+	display: block;
+}
+#email-invalid-container .email-invalid-form-wrapper .right .task-container .user-task {
+	color: #A1A1A4;
+	display: inline-block;
+	width: 100%;
+	background-color: inherit;
+	padding: 20px;
+	-webkit-transition: color, background-color ease-out 0.5s;
+	-moz-transition: color, background-color ease-out 0.5s;
+	-o-transition: color, background-color ease-out 0.5s;
+	transition: color, background-color ease-out 0.5s;
+}
+#email-invalid-container .email-invalid-form-wrapper .right .task-container .active-task {
+	color: #2C2C2C;
+	background-color: #EEEEF3;
+}
+#email-invalid-container .email-invalid-form-wrapper .right .task-container .clickable_user-task {
+	cursor: pointer;
+}
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+/*/////////////////--STEP-2--////////////////////*/
+#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail {
+	position: relative;
+	margin-top: 60px;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail label {
+	left: 0;
+	top: -16px;
+	font-size: 11px;
+	color: #0093ee;
+}
+#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail input {
+	color: #64647A;
+}
+@media screen and (min-width: 2400px) {
+	#email-invalid-container .email-invalid-form-wrapper {width: 1200px;}
+	#email-invalid-container .email-invalid-form-wrapper .left {
+		top: 40%;	
+		height: 59%;
+	}
+}
+@media (min-width: 1330px) and (max-width: 1900px) {
+	#email-invalid-container .email-invalid-form-wrapper {width: 900px;}
+	#email-invalid-container .email-invalid-form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .enter-value {
+		font: 20px 'Roboto', sans-serif;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 12px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container {
+		height: 35px;
+		margin-top: 20px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .icon_container {
+		bottom: 20%;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .first-name {
+		margin-top: 55px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .next {
+		margin-top: 40px;
+		width: 125px;
+		height: 40px;
+		font: 14px 'Roboto', sans-serif;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 350px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .right .task-container .user-task {
+		padding: 15px;
+	}
+}
+@media screen (min-width: 1200px) and (max-width: 1329px) {
+	#email-invalid-container .email-invalid-form-wrapper {width: 800px;}
+	#email-invalid-container .email-invalid-form-wrapper .left {
+		top: 29%;
+		height: 70%;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .enter-value {
+		font: 20px 'Roboto', sans-serif;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .enter-value-comment {
+		box-sizing: border-box;
+		font: 11px 'Roboto', sans-serif;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container {
+		height: 30px;
+		margin-top: 20px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail {
+		height: 35px;
+		margin-top: 30px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail input {
+		font: 14px 'Roboto', sans-serif;
+		padding: 4px 20px 4px 0;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container label {
+		color:#758da2;
+		font-size: 12px;
+		top: 12px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .input-item:focus ~ label, 
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .input-item:valid ~ label {
+		top: -6px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .e-mail label {
+		top: -6px;
+		font-size: 11px;
+		color: #0093ee;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .input-container .icon_container {
+		bottom: 25%;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .first-name {
+		margin-top: 40px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .left .step .next {
+		margin-top: 35px;
+		width: 115px;
+		height: 35px;
+		font: 13px 'Roboto', sans-serif;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .right .task-container {
+		font: 15px 'Roboto', sans-serif;
+		width: 300px;
+	}
+	#email-invalid-container .email-invalid-form-wrapper .right .task-container .user-task {
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	#email-invalid-container .email-invalid-form-wrapper .right {display: none;}
+	#email-invalid-container .email-invalid-form-wrapper .left {right: 25%;}
+}

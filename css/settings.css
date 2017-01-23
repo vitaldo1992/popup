@@ -1,0 +1,995 @@
+/****************************************************************              settings              ***************************************************/
+.settings {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	margin:0 0 0;
+}
+.settings .title {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.settings .title h2 {
+	float: left;
+	text-align: left;
+	width: 50%;
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight:700;
+	line-height: 22px;
+	margin:0 0 50px;
+}
+.settings .tabs {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 0;
+	border-bottom: 1px solid #f2f2f2;
+	z-index: 100;
+	position: relative;
+}
+.settings .tabs li {
+	float: left;
+	padding: 0 0 23px;
+	margin: 0 30px -1px 0;
+	border-bottom: 2px solid #fff;
+}
+.settings .tabs li a {
+	color: #dbdbdb;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.settings .tabs li.active a {color: #526acc;}
+.settings .tabs li.active {
+	border-bottom: 2px solid #526acc;
+	padding: 0 0 22px;
+}
+.settings .tab {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.settings .tab .t1,
+.settings .tab .t2 {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+}
+.settings  form {
+	float: left;
+	width: 762px;
+	margin:65px 0 0 0;
+}
+.settings  form.avatar {
+	float: left;
+	width: 370px;
+	margin:65px 0 0 35px;
+}
+.settings form.avatar label {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0 10px;
+	color: #4e4e4e;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+}
+.settings  form.avatar .holder{
+	display: block;
+	overflow: hidden;
+	width: 368px;
+	height: 350px;
+	border-radius: 5px;
+	border: 1px solid #e4e6f0;
+	background-color: #fbfbfd;
+}
+.settings  form.avatar .holder .ava {
+	display: block;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	background-color: #fff343;
+    color: #fff;
+    font-size: 24px;
+	font-weight: 700;
+	line-height: 62px;
+    line-height:100px;
+    text-align: center;
+    margin: 40px auto 0;
+    background-size:cover;
+    border: 1px solid #fff343;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.settings  form.avatar .holder p {
+	display: block;
+	overflow: hidden;
+	padding: 0 60px;
+	margin: 20px 0 30px;
+	color: #000000;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+/***********************************************/
+.custom-file {
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	cursor: pointer;
+	width: 157px;
+	height: 45px;
+}
+.inputFile {
+	position:absolute;
+	top:0;
+	left:50%;
+	margin: 0 0 0 -78px;
+	z-index:20;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	width: 158px;
+	height: 45px;
+	display: block;
+	overflow: hidden;
+	cursor:pointer;
+}
+.TypeFile {
+	width: 158px;
+	height: 45px;
+	display: block;
+	overflow: hidden;
+	cursor:pointer;
+	border-radius: 5px;
+	background-color: #526acc;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin: 0 0 0 -78px;
+	z-index:1;
+	color:#fff;
+	cursor: pointer;
+	text-align:center;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 45px;
+}
+.TypeFile:hover,
+.TypeFile:active,
+.TypeFile.active {
+	border-radius: 5px;
+	background-color: #526acc;
+}
+.inputFileVal {
+	display: none;
+	cursor: pointer;
+	position:absolute;
+	top:0;
+	right:0;
+	height:28px;
+	z-index:2;
+	width:0;
+	background:#fff;
+	border:none;
+	font:12px/28px Arial, Helvetica, sans-serif;
+	color:#5c5c5c;
+	text-indent:14px;
+}
+/********************************************************/
+.settings form .row {
+	width: 762px;
+	float: left;
+	margin:0 0 30px;
+	position: relative;
+}
+.settings form .row.small.zero { margin: 0 0 30px;}
+.settings form .row.small {
+	width: 366px;
+	margin: 0 30px 30px 0;
+}
+.settings form .row label {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0 10px;
+	color: #4e4e4e;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+}
+.settings form .row.small .txt {width: 332px;}
+.settings form .row .txt:focus {border: 1px solid #3db8da;}
+.settings form .row .txt {
+	width: 728px;
+	padding:0 16px;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	height:45px;
+	line-height: 45px;
+	color: #4e4e4e;
+	font-size: 14px;
+	background: none;
+	font-weight: 400;
+	border-radius: 3px;
+	background:#fbfbfd;
+	border: 1px solid #e2e2e2;
+}
+.settings form .row.bind .txt {
+	background-color: #f0f2fa; 
+}
+.settings form .row .lost-pass {
+	position: absolute;
+	right: 18px;
+	bottom: 0;
+	display: block;
+	color: #484848;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 45px;
+}
+.settings form .block {
+	width: 100%;
+	float: left;
+	margin: 20px 0 0;
+}
+.settings form .block .back {
+	float: right;
+	line-height: 45px;
+	color: #4e4e4e;
+	font-size: 14px;
+	font-weight: 400;
+}
+.settings form .block p {
+	float: left;
+	line-height: 45px;
+	color: #4e4e4e;
+	font-size: 16px;
+	font-weight: 600;
+}
+.settings form .block .accept {
+	width: 224px;
+	height: 51px;
+	line-height: 51px;
+	border-radius: 5px;
+	background-color: #23d28a;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 0 0 0;
+	border:none;
+	float: left;
+}
+.settings form .block .accept:hover {
+	background-color: #1fba7a ;
+}
+.settings form .block .accept.active {
+	background-color: #1a9864 ;
+}
+/****************************************************************              settings              ***************************************************/
+.wallets {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin:0 0 0;
+}
+.wallets .title {
+	display: block;
+	overflow: hidden;
+}
+.wallets .title .left {
+	width: 40%;
+	float: left;
+	margin: 0 0 67px;
+}
+.wallets .title h2 {
+	width:100%;
+	float: left;
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight: 700;
+}
+.wallets .title p {
+	float: left;
+	width: 100%;
+	margin: 15px 0 0;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #585858;
+}
+.wallets .title .right {
+	position: relative;
+	float: right;
+	display: inline-block;
+	margin: 0 0 45px 0;
+}
+.wallets .title .right:before {
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	width: 0;
+	height: 100%;
+	position: relative;
+}
+.wallets .title .right .price {
+	margin-right: 30px;
+	text-align: right;
+	display: inline-block;
+}
+.wallets .title .right .price .cost {
+	font-size: 24px;
+	margin-bottom: 14px;
+	color: #26b368;
+	font-weight: 300;
+	line-height: 22px;
+}
+.wallets .title .right .price p {
+	font-size: 13px;
+	margin-top: 10px;
+	color: #484848;
+	font-weight: 300;
+	line-height: 22px;
+}
+.wallets .title .right .btns {
+	display: inline-block;
+	padding: 0 0 0 30px;
+	border-left: 2px solid #DBDBDB;
+	vertical-align: top;
+}
+.wallets .title .right .btns a {
+	display: inline-block;
+	color: white;
+	padding: 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 50px;
+	height: 50px;
+	border-radius: 5px;
+	text-align:center; 
+}
+.wallets .title .right .btns .replenish {
+	width: 163px;
+	background-color: #23d28a;
+	margin: 0 10px 0 0;
+}
+.wallets .title .right .btns .replenish:hover {
+	background-color: #1fba7a ;
+}
+.wallets .title .right .btns .replenish.active {
+	background-color: #1a9864 ;
+}
+.wallets .title .right .btns .output {
+	width: 138px;
+	background-color: #526acc;
+}
+.wallets .top {
+	padding: 50px 0 0;
+	font-size: 0;
+	border-top: 2px solid #e4e6f0;
+}
+.wallets .top .item:last-child {
+	margin: 0;
+}
+.wallets .top .item {
+	display: inline-block;
+	overflow: hidden;
+	width: 345px;
+	margin: 0 67px 0 0;
+}
+.wallets .top .item h3{
+	margin: 0 0 20px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+.wallets .top .user-item {
+	width: 345px;
+	height: 179px;
+	border-radius: 5px;
+	border: 3px solid #e4e6f0;
+	background-color: #e4e6f0;
+	box-sizing: border-box;
+	display:block;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	padding:0;
+	text-align: left;
+}
+.wallets .top .user-item.active {
+	border: 3px solid #526acc;
+	background-color: #fff;
+}
+.wallets .top .user-item.active .count p {
+	color: #111111;	
+}
+.wallets .top .user-item.active .count span{
+	color: #526acc;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.wallets .top .user-item .count {
+	float: left;
+	margin: 58px 0 0 32px;
+	padding: 0 0 0 40px;
+	background:url(../images/ico-main-bal.png) 0 0 no-repeat;
+}
+.wallets .top .user-item .count p{
+	font-size: 41px;
+	font-weight: 300;
+	line-height: 21px;
+	display: block;
+	margin: 0 0 18px;
+	text-align: left;
+	color: #a1a1a1;
+}
+.wallets .top .user-item .count span{
+	color: #7b7b7b;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+.wallets .table {
+	width: 100%;
+	position: relative;
+	display: block;
+	text-align: left;
+}
+.wallets .table h3 {
+	margin: 90px auto 55px 0;
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 22px;
+}
+.wallets .table .head {
+	font-size: 0;
+	width: 100%;
+	height: 70px;
+	text-align: justify;
+	border-top: 1px solid #f2f2f2;
+}
+.wallets .table .head > span {
+	box-sizing: border-box;
+	width: 20%;
+	display: inline-block;
+	padding: 0 34px;
+	font-size: 14px;
+	font-weight:700;
+	line-height: 70px;
+	text-transform: uppercase;
+	color: #989898;
+}
+.wallets .table .head .active {
+	color: #000000;
+	cursor: pointer;
+}
+.wallets .table table {
+	width: 100%;
+	margin-bottom: 100px;
+	background-color: #fff;
+}
+.wallets .table table tr {
+	border: 1px solid #f2f2f2;
+}
+.wallets .table table tr td {
+	box-sizing: border-box;
+	float: left;
+	width: 20%;
+	height: 70px;
+	padding: 0 0 0 34px;
+	color: #1a1a1a;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 70px;
+}
+.wallets .table .status {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 70px;
+	text-transform: uppercase;
+}
+.wallets .table .in-developing {
+	color: #eecf23;
+}
+.wallets .table .upproved {
+	color: #6dc492;
+}
+.wallets .table .reject {
+	color: #d24a43;
+}
+/*********************************************************payment res****************************************/
+#payment .payment-result {
+	display: block;
+	width:100%;
+	padding:0 0 0;
+}
+#payment .payment-result .top {
+	width: 100%;
+	position: relative;
+}
+#payment .payment-result .top .left {
+	width: 100%;
+	text-align: center;
+	margin: 0 0 80px;
+}
+#payment .payment-result .top p {
+	display: block;
+	width:100%;
+	color: #2c2c2c;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+	margin: 20px 0 0;
+}
+#payment .payment-result .top h2 {
+	display: none;
+	width:100%;
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 22px;
+}
+#payment .denied .top h2:nth-child(1) {
+	display: block;
+}
+#payment .success .top h2:nth-child(2) {
+	display: block;
+}
+#payment .payment-result .title .upprove {
+	color: #000;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+}
+#payment .payment-result .content {
+	display: flex;
+	margin: 100px auto;
+}
+#payment .payment-result .content .inner {
+	margin: auto;
+}
+#payment .payment-result .content .payment-res-img {
+	width:150px;
+	height:150px;
+	background-size: 100%;
+	margin: auto;
+}
+#payment .success .content .payment-res-img {
+	background-image:url(../images/success-pay.png);
+	background-repeat:no-repeat;
+	background-size: cover; 
+}
+#payment .denied .content .payment-res-img {
+	background-image:url(../images/denied-pay.png);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+#payment .payment-result .content .btns {
+	width: 100%;
+	text-align: center;
+}
+.payment-result .content .btns a {
+	display: none;
+	width: 148px;
+	height: 42px;
+	border-radius: 5px;
+	background-color: #526acc;
+	padding:0;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	font-weight:600;
+	line-height: 42px;
+	margin: 63px auto auto;
+	transition: background-color 0.3s;
+}
+.payment-result .content .btns a:hover {
+	background-color: #23d28a ;
+}
+.success .content .btns .continue {
+	display: inline-block;
+}
+.denied .content .btns .repeat-pay {
+	display: inline-block;
+}
+#payment .success .content .payment-res-img {
+	height: 150px;
+}
+/****************************************************************              gotoseo                   ***************************************************/
+.gotoseo-servise {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	margin:0 0 0;
+}
+.gotoseo-servise .top {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin: 0 0 200px;
+}
+.gotoseo-servise .top h2 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.gotoseo-servise .top p {
+    float: left;
+    width: 100%;
+    margin: 18px 0 0;
+    color: #2c2c2c;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.gotoseo-servise .next {
+	width: 148px;
+	height: 42px;
+	border-radius: 5px;
+	background-color: #4ec563;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+    padding: 0;
+    color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height:42px;
+	cursor: pointer;
+}
+.gotoseo-servise .gtseo {
+	display:block;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:0 0 0 -110px;
+	width: 223px;
+	height: 223px;
+	border-radius: 50%;
+	border: 4px solid #526acc;
+	background-color: #ffffff;
+	background-image: url(../images/gotoseo.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	z-index: 100;
+	cursor: pointer;
+}
+.gotoseo-servise .next:hover {
+	background-color: #1fba7a ;
+}
+.gotoseo-servise .next.active {
+	background-color: #1a9864 ;
+}
+/****************************************************************              404                   ***************************************************/
+.not-found {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	margin:0 0 0;
+}
+.not-found .text {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin:50px 0 0;
+	text-align:center; 
+}
+.not-found .text h2 {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 0 50px;
+	color: #ffb502;
+	font-size: 161px;
+	font-weight: 400;
+	width: 100%;
+	line-height: 1;
+}
+.not-found .text p {
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 18px;
+	line-height: 1;
+	color: #141414;
+	font-weight: 300;
+}
+.not-found .text p span {
+	color: #526acc;
+	font-weight: 700;
+}
+/****************************************************************              settings              ***************************************************/
+.ref {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	margin:0 0 0;
+}
+.ref .title {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.ref .title h2 {
+	float: left;
+	text-align: left;
+	width: 50%;
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight:700;
+	line-height: 22px;
+	margin:0 0 50px;
+}
+.ref .title .invite {
+	float: right;
+    width: 163px;
+	height: 50px;
+	padding: 0;
+	border-radius: 5px;
+	background-color: #23d28a;
+	color: #ffffff;
+	text-align:center; 
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 50px;
+}
+.ref .title .invite:hover {
+	background-color: #1fba7a ;
+}
+.ref .title .invite.active {
+	background-color: #1a9864 ;
+}
+.ref .ref-tabs {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 0;
+	border-bottom: 1px solid #f2f2f2;
+	z-index: 100;
+	position: relative;
+}
+.ref .ref-tabs li {
+	float: left;
+	padding: 0 0 23px;
+	margin: 0 30px -1px 0;
+	border-bottom: 2px solid #fff;
+}
+.ref .ref-tabs li a {
+	color: #dbdbdb;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.ref .ref-tabs li.active a {color: #526acc;}
+.ref .ref-tabs li.active {
+	border-bottom: 2px solid #526acc;
+	padding: 0 0 22px;
+}
+.ref .ref-tab {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.ref .ref-tab .t1,
+.ref .ref-tab .t2 {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+}
+.ref .table {
+	width: 100%;
+	position: relative;
+	display: block;
+	margin: 50px 0 0;
+	text-align: left;
+}
+.ref .table h3 {
+	margin: 60px auto 44px 0;
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 22px;
+}
+.ref .table .head {
+	font-size: 0;
+	height: 70px;
+	width: 100%;
+	text-align: justify;
+}
+.ref .table .head span {
+	box-sizing: border-box;
+	width: 20%;
+	float: left;
+	padding: 0 0 0 34px;
+	color: #989898;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 70px;
+	text-transform: uppercase;
+}
+.ref .table .head .h5 {
+	text-align: center;
+	float: left;
+	width: 20%;
+	text-indent: -34px;
+}
+.ref .table .head .active {
+	color: #000;
+	cursor: pointer;
+}
+.ref .table table {
+	width: 100%;
+	background-color: #fff;
+}
+.ref .table table tr {
+	border: 1px solid #f2f2f2;
+	cursor: pointer;
+}
+.ref .table table tr td {
+	box-sizing: border-box;
+	float: left;
+	width: 20%;
+	height: 70px;
+	padding: 0 0 0 34px;
+	color: #1a1a1a;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 70px;
+}
+.ref .table table tr td:last-child {
+	width: 20%;
+}
+.ref .table .check {
+	background: url(../images/ico-check.png) 50% 50% no-repeat;
+}
+.ref .table .uncheck {
+	background: url(../images/ico-uncheck.png) 50% 50% no-repeat;
+}
+.ref .table .line1 {
+	background: url(../images/ico-line1.png) 50% 50% no-repeat;
+}
+.ref .table .line3 {
+	background: url(../images/ico-line3.png) 50% 50% no-repeat;
+}
+/************************************Support*************************************/
+.support {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	margin:0 0 0;
+}
+.support .title {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.support .title h2 {
+	float: left;
+	text-align: left;
+	width: 100%;
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 22px;
+	margin:0 0 60px;
+}
+.support  form {
+	float: left;
+	width: 762px;
+	margin:0 0 0 0;
+}
+.support form .row {
+	width: 762px;
+	float: left;
+	margin:0 0 30px;
+	position: relative;
+}
+.support form .row label {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0 10px;
+	color: #4e4e4e;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 22px;
+}
+.support form .row .txt:focus {border: 1px solid #3db8da;}
+.support form .row textarea {
+	width: 728px;
+	padding:16px;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	height:204px;
+	line-height: 22px;
+	color: #4e4e4e;
+	font-size: 14px;
+	background: none;
+	font-weight: 400;
+	border-radius: 3px;
+	border: 1px solid #e2e2e2;
+}
+.support form .row .txt {
+	width: 728px;
+	padding:0 16px;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	height:40px;
+	line-height: 40px;
+	color: #4e4e4e;
+	font-size: 14px;
+	background: none;
+	font-weight: 400;
+	border-radius: 3px;
+	border: 1px solid #e2e2e2;
+}
+.support form .block {
+	width: 100%;
+	float: left;
+	margin: 20px 0 0;
+}
+.support form .block .send {
+	width: 224px;
+	height: 51px;
+	border-radius: 5px;
+	background-color: #23d28a;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 51px;
+	margin: 0 0 0;
+	border:none;
+	float: left;
+}
+.support form .block .send:hover {
+	background-color: #1fba7a ;
+}
+.support form .block .send.active {
+	background-color: #1a9864 ;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" href="css/all-reset.css" type="text/css"/>
+	<link rel="stylesheet" href="css/all-form.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/email-invalid.js"></script>
+	<script src="js/create-new-password.js"></script>
+	<script src="js/logining.js"></script>
+	<script src="js/registration.js"></script>
+</head>
+<body>
+	<div id="form-container">
+		<div class="preloaded active-step" id="gradient">
+			<div class="preload-image">
+				<img src="images/Logo-go-2-web.png" alt="gotoweb-preload">
+			</div>
+		</div>
+		<div class="progress-bar"></div>
+		<div class="form-wrapper">
+			<form class="left" novalidate method="post" action="#">
+				<div class="step first-step active-step">
+					<p class="enter-value">Введите пожалуйста свои имя и фамилию</p>
+					<p class="enter-value-comment">Это позволит нам взаимодействовать с вами на дружественном уровне</p>
+					<div class="first-name input-container">
+						<input required type="text" class="input-item" name="first_name"/>
+						<span class="icon_container">
+							<span class="input-item-icon required"></span>
+						</span>
+						<span class="bar">
+							<span class="bar-span"></span>
+						</span>
+						<label>Имя</label>
+					</div>
+					<div class="last-name input-container">
+						<input required type="text" class="input-item" name="last_name" />
+						<span class="icon_container">
+							<span class="input-item-icon required" id="user-last-name"></span>
+						</span>
+						<span class="bar">
+							<span class="bar-span"></span>
+						</span>
+						<label>Фамилия</label>
+					</div>
+					<input type="button" class="next first-next" value="Далее"/>
+				</div>
+				<div class="step second-step">
+					<p class="enter-value">Создайте свой пароль</p>
+					<p class="enter-value-comment">Ваша электронная почта является вашим логином для входа в систему</p>
+					<div class="e-mail input-container">
+						<input required type="text" class="input-item success" value="vitaliy.duvalko@gmail.com" disabled="disabled"/>
+						<span class="input-item-icon"></span>
+						<span class="bar">
+							<span class="bar-span"></span>
+						</span>
+						<label>Логин</label>
+					</div>
+					<div class="password-user input-container">
+						<input required type="password" class="input-item"/>
+						<span class="icon_container">
+							<span class="input-item-icon required"></span>
+							<span class="show-password-icon"></span>
+						</span>
+						<span class="bar">
+							<span class="bar-span"></span>
+						</span>
+						<label>Пароль</label>
+					</div>
+					<div class="password-user-repeat input-container">
+						<input required type="password" class="input-item"/>
+						<span class="icon_container">
+							<span class="input-item-icon required"></span>
+							<span class="show-password-icon"></span>
+						</span>
+						<span class="bar">
+							<span class="bar-span"></span>
+						</span>
+						<label>Подтвердите пароль</label>
+					</div>
+					<input type="submit" class="next registration" value="Регистрация" />
+				</div>
+			</form>
+			<div class="right">
+				<div class="task-container">
+					<div class="user-task active-task">1. Введите пожалуйста свои имя и фамилию</div>
+					<div class="user-task clickable_user-task">2. Создайте пароль</div>
+				</div>
+			</div>
+		</div>
+		<div class="postloader">
+			<div class="preload-image">
+				<img src="images/Logo-go-2-web.png" alt="gotoweb-preload">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

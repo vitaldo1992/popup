@@ -1,0 +1,119 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/all-reset.css" type="text/css"/>
+	<link rel="stylesheet" href="css/all-form.css" type="text/css"/>
+	<link rel="stylesheet" href="css/settings.css" type="text/css"/>
+	<link rel="stylesheet" href="css/dashboard.css" type="text/css"/>
+	<link rel="stylesheet" href="css/scrollarrow.css" type="text/css"/>
+	<link rel="stylesheet" href="css/site-type.css" type="text/css"/>
+	<link rel="stylesheet" href="css/mysites.css" type="text/css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/email-invalid.js"></script>
+	<script src="js/create-new-password.js"></script>
+	<script src="js/logining.js"></script>
+	<script src="js/registration.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/popup.js"></script>
+	<title>popup-invite-static</title>
+</head>
+<body class="pop-up">
+	<!-- <body> -->
+	<div id="wrapper">
+		<div id="header">
+			<div class="top">
+				<h1 class="logotype"><a href="#"></a></h1>
+				<div class="nav">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Мои сайты</a></li>
+						<li><a href="#">Кошельки</a></li>
+						<li><a href="#">Реферальная система</a></li>
+						<li><a href="#">Дополнительные услуги</a></li>
+						<li><a href="#">Продвижение</a></li>
+						<li><a href="#">Видео уроки</a></li>
+					</ul>
+				</div>
+				<div class="title">
+					<div class="login-title">
+						<p title="Аккаунт Меню" class="name">Привет, <span> Дмитрий</span></p>
+						<a href="#" class="avatar">ДП</a>
+						<div class="dropdown">
+							<ul class="list">
+								<li><a href="#">Настройки</a></li>
+								<li><a href="#">Платежи</a></li>
+								<li><a href="#">Тарифный план</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <a href="#" class="notifications"><span>99</span></a> -->
+					<div class="menu-title">
+						<a title="Меню Категорий" href="#" class="menu"><span></span></a>
+						<div class="dropdown">
+							<ul class="list">
+								<li><a href="#">Лендинг</a></li>
+								<li><a href="#">Персональная Страница</a></li>
+								<li><a href="#">Интернет - Магазин</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p class="copy">© Copyright 2017. Goto, Inc. Все права защищены.</p>
+			<ul class="nav">
+				<li>Тарифы</li>
+				<li>Техническая Поддержка</li>
+				<li>О нас</li>
+			</ul>
+		</div>
+		<div id="main">
+			<div id="content">
+				<div class="popup-static">
+					<div class="bg"></div>
+					<div class="row">
+						<div class="top">
+							<h4>Пригласить Пользователя</h4>
+						</div>
+						<div class="line"></div>
+						<form>
+							<div class="form-layout">
+								<label class="multi-email-label">Введите e-mail пользователя которого вы хотите пригласить</label>
+								<input type="text" class="input-item" placeholder="Вы можете ввести до 5 e-mail через запятую" />
+								<div class="plan">
+									<label class="plan-label" for="checkbox-1">
+										<span class="label-text">Прикрепить тарифный план - FREEDOM</span>
+									</label>
+									<input class="plan-input" type="checkbox" name="checkbox-1" id="checkbox-1" value="plan">
+								</div>
+							</div>
+							<div class="line"></div>
+							<div class="form-layout">
+								<div class="referal-link">
+									<label class="referal-link-label">Реферальная ссылка</label>
+									<input type="url" readonly="readonly" class="link" value="https://translate.google.com.ua/?hl=ru#ru/en/%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82%D0%B8%D1%82%D1%8C" id="post-shortlink" />
+									<input type="button" class="copy-link" value="Скопировать" id="copy-button" data-clipboard-target="#post-shortlink"/>
+								</div>
+								<div class="btns">
+									<input type="submit" class="next" value="Продолжить" />
+									<input type="button" class="prev" value="Отмена" />
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="bottom">Введите e-mail пользователя которого вы хотите пригласить</div>
+				</div>
+			</div>
+			<a href="#" class="question"></a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,405 @@
+/*******************************Header****************************/
+#header {
+	width:100%;
+	height:70px;
+	padding:0 0;
+	display:block;
+	position:fixed;
+	top: 0;
+	left:0;
+	z-index: 10;
+}
+#header .logotype {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 142px;
+	height: 35px;
+	margin: 15px 0 0 30px;
+	text-indent: -9999px;
+	background-image: url(../images/logotype.png);
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
+	cursor: pointer;
+}
+/*#header .logotype:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 4px 0 4px;
+	border-color: #fff transparent transparent transparent;
+	top: 45%;
+	right:0px;
+}*/
+#header .title {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 70px;
+	margin: 0 0 0 0;
+}
+#header .top {
+	width: 100%;
+	height: 70px;
+	float: left;
+	margin: 0;
+	text-align: center;
+	background: #526acc;
+}
+/*******************************Login Title****************************/
+#header .title .login-title {
+	float: right;
+	height: 70px;
+	margin: 0 30px 0 0;
+	cursor: pointer;
+	position: relative;
+}
+#header .title .login-title .name {
+	float: right;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 70px;
+	color: #fff;
+	position: relative;
+}
+#header .title .login-title .name span {
+	float: right;
+	margin: 0 0 0 5px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 70px;
+}
+/*#header .title .login-title .name:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 4px 0 4px;
+	border-color: #fff transparent transparent transparent;
+	top: 48%;
+	right:-15px;
+}*/
+#header .title .login-title .avatar {
+	float: right;
+	width: 35px;
+	height: 35px;
+	color: #fff;
+	font-weight: 900;
+	font-size: 12px;
+	line-height: 35px;
+	text-align: center;
+	margin: 16px 10px 0 0;
+	background-size:46px ;
+	border: 1px solid #f5ba5c;
+	background-color:#f5ba5c ;
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+#header .title .login-title .dropdown.active {display: block;}
+#header .title .login-title .dropdown {
+	display: none;
+	position: absolute;
+	top: 61px;
+	right: -15px;
+	background-color: #fff;
+	border-radius: 7px;
+	box-shadow: 0 1px 7px 1px rgba(14, 14, 14, 0.17);
+}
+#header .title .login-title .dropdown .list {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#header .title .login-title .dropdown .list li{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+#header .title .login-title .dropdown .list li a{
+	width: 150px;
+	display: block;
+	overflow: hidden;
+	height: 40px;
+	text-align: left;
+	line-height: 40px;
+	padding:0 25px;
+	color: #343738;
+	font-size: 13px;
+}
+#header .title .login-title .dropdown .list li:hover a {
+	color: #c7cfd4;
+}
+#header .title .login-title .dropdown .list li:first-child a {
+	padding:10px 25px 0;
+}
+#header .title .login-title .dropdown .list li:last-child a {
+	padding:0 25px 10px;
+}
+/*******************************Menu Title****************************/
+#header .title .menu-title {
+	float: right;
+	height: 70px;
+	margin: 0 0 0;
+	position: relative;
+}
+#header .title .menu-title .menu{
+	float: right;
+	width: 35px;
+	height: 35px;
+	margin: 16px 10px 0 0;
+	position: relative;
+	background-color: #526acc;
+	border: 1px solid #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+#header .title .menu-title .menu.active{
+    background-color:#fff;
+    -o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+#header .title .menu-title .menu span{
+	height:12px; 
+	width:12px; 
+	display:block; 
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+} 
+#header .title .menu-title .menu span:before,
+#header .title .menu-title .menu span:after{
+	content: "";
+    position: absolute;
+    background-color:#fff;
+    -o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+#header .title .menu-title .menu span:after{
+	top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+}
+#header .title .menu-title .menu span:before{
+	top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+}
+#header .title .menu-title .menu.active span:before,
+#header .title .menu-title .menu.active span:after{
+    background-color:#5c5f95;
+    -o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+#header .title .menu-title .menu.active span { 
+	transform: rotate(135deg); 
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+#header .title .menu-title .dropdown.active {display: block;}
+#header .title .menu-title .dropdown {
+	display: none;
+	position: absolute;
+	top: 61px;
+	right: 0;
+	background-color: #fff;
+	box-shadow: 0 1px 7px 1px rgba(14, 14, 14, 0.17);
+	border-radius: 7px;
+}
+#header .title .menu-title .dropdown .list {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#header .title .menu-title .dropdown .list li{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+#header .title .menu-title .dropdown .list li a{
+	width: 150px;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	height: 50px;
+	line-height: 50px;
+	padding:0 25px;
+	color: #343738;
+	font-size: 13px;
+}
+#header .title .menu-title .dropdown .list li:hover a {
+	/*color: #c7cfd4;*/
+	color:#a0aad8;
+}
+#header .title .menu-title .dropdown .list li:first-child a{
+	padding:10px 25px 0;
+}
+/************************************* NAV **************************************/
+#header .nav {
+	display: inline-block;
+	align-items: center;
+	height: 70px;
+}
+#header .nav ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+#header .nav ul li {
+	display: inline-block;
+	height: 70px;
+	margin: 0 15px;
+}
+#header .nav ul li:hover a {
+	color:#c8c8c8;
+}
+#header .nav ul li:active a, 
+#header .nav ul li.active a {
+	color:#fff;
+	margin: 0 0 17px;
+	height:50px;
+	border-bottom: 3px solid #fff;
+}
+#header .nav ul li a {
+	color: #fff;
+	font-size: 13px;
+	height: 70px;
+	display: block;
+	overflow: hidden;
+	font-weight: 400;
+	line-height: 70px;
+}
+#footer {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height: 39px;
+	z-index:100;
+	border: 1px solid #e4e6f0;
+	background-color: #f3f4f6;
+}
+#footer p {
+	float: left;
+	margin:0 0 0 38px;
+	line-height: 39px;
+	color: #2f2f2f;
+	font-size: 14px;
+	font-weight: 400;
+}
+#footer .nav {
+	float: right;
+	margin:0 30px 0 0;
+	height: 39px;
+}
+#footer .nav li {
+	float: right;
+	margin: 0 0 0 30px;
+	line-height: 39px;
+	cursor:pointer;
+	color: #2f2f2f;
+	font-size: 14px;
+	font-weight: 400;
+}
+#header .nav ul li:first-child {margin: 0 15px 0 0;}
+#header .nav ul li:last-child {margin: 0  0 0 15px;}
+/*******************************Notifications****************************/
+/*#header .title .notifications {
+	float: right;
+	width: 35px;
+	height: 35px;
+	margin: 16px 10px 0 0;
+	border: 1px solid #5c5f95;
+	background-image: url(../images/ico-notifications.png);
+	background-color:#fff;
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	position: relative;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+border: 1px solid #d24a43;
+	background-image:none;
+	background-color:#d24a43;
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+#header .title .notifications:hover span{
+	display:block;
+	opacity: 1;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+			transition: 0.15s ease-in-out;
+}
+#header .title .notifications span {
+	display: none;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	opacity: 0;
+}*/

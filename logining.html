@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Logining</title>
+	<link rel="stylesheet" href="css/all-reset.css" type="text/css"/>
+	<link rel="stylesheet" href="css/all-form.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/email-invalid.js"></script>
+	<script src="js/create-new-password.js"></script>
+	<script src="js/logining.js"></script>
+	<script src="js/registration.js"></script>
+</head>
+<body>
+	<div id="logining-container">
+		<div class="preloaded active-step" id="gradient">
+			<div class="preload-image">
+				<img src="images/Logo-go-2-web.png" alt="gotoweb-preload">
+			</div>
+		</div>
+		<div class="progress-bar"></div>
+		<div class="logining-form-wrapper">
+			<form class="left" novalidate method="post" action="#">
+				<!-- <form class="left"> -->
+				<div class="step first-step active-step">
+					<p class="enter-value">С возвращением!</p>
+					<p class="enter-value-comment">Введите свой логин и пароль для продолжения работы в - Gotoweb.</p>
+					<div class="welcom-back input-container">
+						<input required type="text" class="input-item" name="first_name"/>
+						<span class="icon_container">
+							<span class="input-item-icon required"></span>
+						</span>
+						<span class="bar">
+							<span class="bar-span"></span>
+						</span>
+						<label>Логин / E-Mail</label>
+					</div>
+					<div class="password-user input-container">
+						<input required type="password" class="input-item"/>
+						<span class="icon_container">
+							<span class="forgot-password">Забыли пароль?</span>
+							<span class="input-item-icon required"></span>
+							<span class="show-password-icon"></span>
+						</span>
+						<span class="bar">
+							<span class="bar-span"></span>
+						</span>
+						<label>Пароль</label>
+					</div>
+					<input type="button" class="next logining" value="Войти"/>
+				</div>
+				<div class="step forgot-password-step">
+					<p class="enter-value">Забыли пароль?</p>
+					<p class="enter-value-comment">Введите свой электроный адрес, после чего вам придет ссылка для
+						восстановления пароля.</p>
+					<div class="welcom-back input-container">
+							<input required type="text" class="input-item" name="first_name"/>
+							<span class="icon_container">
+								<span class="input-item-icon"></span>
+							</span>
+							<span class="bar">
+								<span class="bar-span"></span>
+							</span>
+							<label>Логин / E-Mail</label>
+					</div>
+					<input type="button" class="next continue-reset-password" value="Продолжить" />
+				</div>
+				<div class="step your-email-send">
+					<p class="enter-value">Ссылка для сброса пароля, успешно отправлена!</p>
+					<p class="enter-value-comment">Проверьте свою электроную почту, после чего перейдите по ссылке</p>
+					<p class="enter-value-comment">и введите свой новый пароль.</p>
+				</div>
+			</form>
+		</div>
+		<div class="postloader">
+			<div class="preload-image">
+				<img src="images/Logo-go-2-web.png" alt="gotoweb-preload">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

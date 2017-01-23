@@ -1,0 +1,824 @@
+html {-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'Roboto', sans-serif;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+input, textarea, select {
+	font-family: 'Roboto', sans-serif;
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+/* wrapper */
+body.pop-up {
+	overflow: hidden;
+}
+body.pop-up #main{
+	z-index: 999;
+}
+#wrapper.full {height: 100vh;}
+#wrapper {
+	display:block;
+	overflow: hidden;
+	position:relative;
+	width:100%;
+	
+}
+.wrap {
+	width: 1170px;
+	display: block;
+	margin: 0 auto;
+}
+#main {
+	display: flex;
+	align-items: stretch;
+	overflow: hidden;
+	padding:  0 0 40px;
+	margin:70px 0 0 0;
+	box-sizing:border-box;
+	position: relative;
+	z-index: 1;
+	width:100%;
+	height: 100%;
+	background:#f3f4f6;
+}
+#main .question {
+	position: fixed;
+	bottom:104px;
+	right:30px;
+	display: block;
+	width:60px;
+	height:60px;
+	background-image: url(../images/ico-mes.png);
+	background-color:#526acc;
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	z-index: 1000;
+}
+/*******************************steps list********************************************************/
+.steps.success .list li {
+	width:450px !important;
+}
+.steps.success .list li:before {
+	left: -222px !important;
+	width:450px !important;
+}
+.steps.gotoseo .list li {
+	width:586px !important;
+}
+.steps.gotoseo .list li:before {
+	left: -284px !important;
+	width:568px !important;
+}
+.steps.gotoseo {
+	position: relative;
+	z-index: 10;
+	overflow: visible;
+	margin: 0 0 150px;
+}
+.steps {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+	position: relative;
+	margin: 0 0 0;
+}
+.steps .list {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	list-style: none;
+}
+.steps .list li {
+	display: inline-block;
+	cursor: pointer;
+	width: 216px;
+	margin: 0 -2px;
+	position: relative;
+}
+.steps .list li:first-child:before {display: none;}
+.steps .list li:before {
+	position: absolute;
+	top: 9px;
+	left: -116px;
+	background-color: #526acc;
+	content: '';
+	width: 216px;
+	height: 2px;
+	z-index: 1;
+}
+.steps .list li.active span{
+	background-color: #526acc;
+}
+.steps .list li.pas span {
+	background-color: #ffffff;
+}
+.steps .list li.active a {color: #2c2c2c;}
+.steps .list li.pas a {color: #2c2c2c;}
+.steps .list li span {
+	display: block;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 0 auto 10px;
+	background: #fff;
+	width: 10px;
+	height: 10px;
+	border:5px solid #526acc;
+}
+.steps .list li a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 0;
+	color: #d9d9d9;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 22px;
+}
+/************************************POPUP**************************************************/
+.popup {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+}
+.popup .bg {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	opacity: 0.65;
+	background-color: #787a82;
+}
+/****************************************PAY POPUP******************************************/
+.popup .row {
+	width: 714px;
+	border-radius: 5px;
+	background: #ffffff;
+	margin: 140px auto 0;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+.popup .top {
+	display: block;
+	overflow: hidden;
+	height:88px;
+	width:630px;
+	background: #fff;
+	padding: 0 42px;
+	margin: 0 0 30px;
+	border-bottom: 2px solid #f1f2f7;
+}
+.popup .top h4{
+	float: left;
+	margin: 0;
+	color: #121212;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 88px;
+}
+.popup form {
+	display: block;
+	overflow: hidden;
+	width:630px;
+	background: #fff;
+	padding: 0 42px;
+	background-color: #fff;
+}
+.popup form label{
+	width:100%;
+	color: #909090;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 0 0;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0 15px;
+}
+.popup form p{
+	width:100%;
+	color: #909090;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 52px;
+	padding:0 0 22px;
+	padding: 0 0;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0 0;
+}
+.popup form label span{
+	color: #23d28a;
+	font-weight: 700;
+}
+.popup form .pass.margin{margin: 0;}
+.popup form .pass{
+	width:598px;
+	padding: 0 15px;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	line-height: 54px;
+	color: #909090;
+	font-size: 14px;
+	background: #fff;
+	font-weight: 400;
+	height: 54px;
+	border-radius: 5px;
+	border: 1px solid #f0f2fa;
+	background-color: #fbfbfd;
+	margin: 0 0 30px;
+}
+.popup form .pass:focus {border: 1px solid #526acc;}
+.popup .btns {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 50px;
+}
+.popup form .prev{
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	color: #000;
+	margin: 0 0 0;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 54px;
+	text-align: center;
+	width: 294px;
+	height: 54px;
+	border-radius: 5px;
+	border: 2px solid #e8e9f2;
+	background-color: #fff;
+}
+.popup form .next{
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	margin: 0;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 54px;
+	text-align: center;
+	width: 294px;
+	height: 54px;
+	border-radius: 5px;
+	border: 2px solid #23d28a;
+	background-color: #23d28a;
+}
+.popup form .next:hover{
+	border: 2px solid #21c17f;
+	background-color: #21c17f;
+}
+.popup .line {
+	width: 100%;
+	height: 2px;
+	margin: 22px 0 72px;
+	float: left;
+	background: #dbdbdb;
+	position: relative;
+	z-index: 1;
+}
+.popup .add{
+	cursor: pointer;
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin:-22px 0 0 42px;
+	position: relative;
+	background-color: #526acc;
+	border: 1px solid #526acc;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	transition: 0.15s ease-in-out;
+}
+.popup .add.active{
+	background-color:#fff;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	transition: 0.15s ease-in-out;
+}
+.popup .add .plus{
+	height:16px; 
+	width:16px; 
+	display:block; 
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin: -8px 0 0 -8px;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	transition: 0.15s ease-in-out;
+} 
+.popup .add .plus:before,
+.popup .add .plus:after{
+	content: "";
+	position: absolute;
+	background-color:#fff;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	transition: 0.15s ease-in-out;
+}
+.popup .add .plus:after{
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	margin-top: -1px;
+}
+.popup .add .plus:before{
+	top: 0;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	margin-left: -1px;
+}
+.popup .add.active .plus:before,
+.popup .add.active .plus:after{
+	background-color:#5c5f95;
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	transition: 0.15s ease-in-out;
+}
+.popup .add.active .plus { 
+	transform: rotate(135deg); 
+	-o-transition: 0.15s ease-in-out;
+	-ms-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	transition: 0.15s ease-in-out;
+}
+/****************************************PAY STATIC******************************************/
+.popup-static {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+.popup-static .bg {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	opacity: 0.65;
+	background-color: #787a82;
+}
+.popup-static .bottom {
+	height: 95px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	display: block;
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 100px;
+	text-align: center;
+}
+.popup-static .row {
+	width: 714px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin: 100px auto 0;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+.popup-static .row .top {
+	display: block;
+	margin: auto;
+	text-align: center
+}
+.popup-static .row .top h4 {
+	color: #121212;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 88px;
+}
+.popup-static .row .line {
+	width: 100%;
+	height: 2px;
+	float: left;
+	background: #f1f2f7;
+	position: relative;
+	z-index: 1;
+}
+.popup-static .row form {
+	width: 100%;
+	box-sizing: border-box;
+	height: auto;
+	overflow: hidden;
+}
+.popup-static .row form .form-layout {
+	width: 100%;
+	height: auto;
+	padding: 43px 42px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+.popup-static .row form .form-layout .multi-email-label {
+	width: 100%;
+	line-height: 24px;
+	padding: 0 0;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0 15px;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+}
+.popup-static .row form .form-layout .input-item {
+	position: relative;
+	padding: 0 22px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	border: 2px solid #f0f2fa;
+	background-color: #fbfbfd;
+	line-height: 100px;
+}
+.popup-static .row form .form-layout .input-item {
+	background-image: url(../images/email-2048-black.png);
+	background-repeat: no-repeat;
+	background-attachment: absolute;
+	background-position: 95% center ;
+}
+.popup-static .row form .form-layout .input-item::-webkit-input-placeholder {
+	color: #939393;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 100px;
+}
+.popup-static .row form .form-layout .input-item::-moz-placeholder {
+	color: #939393;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 100px;
+}
+.popup-static .row form .form-layout .input-item:-ms-input-placeholder {
+	color: #939393;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 100px;
+}
+.popup-static .row form .form-layout .input-item:-moz-placeholder {
+	color: #939393;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 100px;
+}
+.popup-static .row form .form-layout .plan {
+	margin-top: 19px;
+	width: 100%;
+	height: 57px;
+	border: 2px solid #f0f2fa;
+	background-color: #fbfbfd;
+	line-height: 57px;
+	box-sizing: border-box;
+}
+.popup-static .row form .form-layout .referal-link {
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 100px;
+	box-sizing: border-box;
+}
+.popup-static .row form .form-layout .referal-link .referal-link-label {
+	display: block;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	height: 42px;
+}
+.popup-static .row form .form-layout .referal-link .link {
+	float: left;
+	display: block;
+	width: 450px;
+	height: 57px;
+	border: 2px solid #f0f2fa;
+	border-width: 2px 0 2px 2px;
+	background-color: #fbfbfd;
+	padding: 0 20px 0 27px;
+	box-sizing: border-box;
+	color: #3db8da;
+	font-size: 14px;
+	font-weight: 300;
+	text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	background-color: inherit;
+	white-space: nowrap;
+	overflow: hidden;
+	appearance: none;
+	-webkit-appearance: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.popup-static .row form .form-layout .referal-link .copy-link {
+	float: left;
+	display: block;
+	width: 178px;
+	height: 57px;
+	background-color: #45c4e7;
+	box-sizing: border-box;
+	border: none;
+	padding: 0 24px 0 58px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 57px;
+	background-image: url(../images/link-6.png);
+	background-repeat: no-repeat;
+	background-attachment: absolute;
+	background-position: 20px center;
+	box-sizing: border-box;
+	cursor: pointer;
+	outline: none;
+}
+.popup-static .row form .form-layout .referal-link .copy-link:hover {
+	background-color: #3fb5d6;
+}
+.popup-static .row form .form-layout .referal-link .copy-link:active {
+	box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+	background-color: #3fb5d6;
+}
+.popup-static .row form .form-layout .btns {
+	display: block;
+	margin-top: 30px;
+}
+.popup-static .row form .form-layout .btns .prev{
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	color: #d9dbe3;
+	margin: 0 0 0;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 50px;
+	text-align: center;
+	width: 294px;
+	height: 54px;
+	border: 2px solid #e8e9f2;
+	background-color: #fff;
+}
+.popup-static .row form .form-layout .btns .next{
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	margin: 0;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 50px;
+	text-align: center;
+	width: 294px;
+	height: 54px;
+	border: 2px solid #23d28a;
+	background-color: #23d28a;
+	outline: none;
+}
+.popup-static .row form .form-layout .btns .next:hover{
+	border: 2px solid #21c17f;
+	background-color: #21c17f;
+}
+.popup-static .row form .form-layout .ui-button .ui-icon {
+	background-image: url(../images/success-icon-10-copy.png);
+	background-position: 0px -150px;
+	width: 25px;
+	height: 26px;
+	border-radius: 25px;
+	border: none;
+}
+.popup-static .row form .form-layout .ui-state-checked {
+
+}
+.popup-static .row form .form-layout .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: inherit;
+	font-weight: normal;
+	color: #45c4e7;
+	border: none;
+	box-shadow: none;
+}
+
+.popup-static .row form .form-layout .ui-checkboxradio-label .ui-icon-background {
+	box-shadow: inset 0 2px 1px 1px rgba(0, 0, 0, 0.16);
+	border: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+}
+.popup-static .row form .ui-checkboxradio-label {
+	border: none;
+	background-color: inherit;
+	cursor: default;
+}
+.popup-static .row form .ui-checkboxradio-label .ui-checkboxradio-icon {
+	background-color: #f0f2fa;
+}
+.popup-static .row form .ui-checkboxradio-label .ui-checkboxradio-icon.ui-state-checked {
+	box-shadow: none;
+}
+.popup-static .row form .form-layout .ui-checkboxradio-label .ui-checkboxradio-icon-space {
+	width: 22px;
+	display: inline-block;
+}
+
+.popup-static .row form  .ui-state-focus, .ui-visual-focus {
+	border: none;
+	box-shadow: none;
+}
+@media (max-width: 1400px) {
+	.popup-static .bottom {
+		height: 60px;
+		line-height: 65px;
+		font-size: 14px;
+	}
+	.popup-static .row {
+		width: 554px;
+		margin-top: 80px;
+	}
+	.popup-static .row .top h4 {
+		color: #121212;
+		font-size: 18px;
+		line-height: 60px;
+	}
+	.popup-static .row form .form-layout {
+		padding: 20px 28px;
+	}
+	.popup-static .row form .form-layout .multi-email-label {
+		line-height: 20px;
+		margin: 0 0 10px;
+		font-size: 14px;
+	}
+	.popup-static .row form .form-layout .input-item {
+		height: 70px;
+		line-height: 70px;
+	}
+	.popup-static .row form .form-layout .plan {
+		margin-top: 14px;
+		width: 100%;
+		height: 47px;
+		line-height: 43px;
+	}
+	.popup-static .row form .form-layout .referal-link {
+		height: 68px;
+	}
+	.popup-static .row form .form-layout .referal-link .referal-link-label {
+		font-size: 14px;
+		line-height: 26px;
+		height: 26px;
+	}
+	.popup-static .row form .form-layout .referal-link .link {
+		width: 350px;
+		height: 40px;
+		border-width: 2px 0 2px 2px;
+		padding: 0 20px 0 27px;
+		font-size: 14px;
+	}
+	.popup-static .row form .form-layout .referal-link .copy-link {
+		width: 148px;
+		height: 40px;
+		padding: 0 24px 0 45px;
+		font-size: 14px;
+		line-height: 40px;
+		background-size: 17px;
+	}
+	.popup-static .row form .form-layout .btns {
+		display: block;
+		margin-top: 20px;
+		height: 50px;
+		position: relative;
+	}
+	.popup-static .row form .form-layout .btns .prev{
+		font-size: 14px;
+		line-height: 40px;
+		width: 240px;
+		height: 45px;
+	}
+	.popup-static .row form .form-layout .btns .next{
+		font-size: 14px;
+		line-height: 40px;
+		width: 240px;
+		height: 45px;
+	}
+	.popup-static .row form .form-layout .btns .next:hover{
+		border: 2px solid #21c17f;
+		background-color: #21c17f;
+	}
+	.popup-static .row form .form-layout .ui-button .ui-icon {
+		background-position: 0px -140px;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		background-size: 20px;
+	}
+	.popup-static .row form .form-layout .ui-checkboxradio-label .ui-icon-background {
+		box-shadow: inset 0 2px 1px 1px rgba(0, 0, 0, 0.16);
+		border: none;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+	}
+	.popup-static .row form .form-layout .ui-checkboxradio-label .ui-checkboxradio-icon-space {
+		width: 18px;
+	}
+	.popup-static .row form .form-layout .label-text {
+		font-size: 14px;
+	}
+	.popup-static .row form .ui-checkboxradio-label .ui-checkboxradio-icon.ui-state-checked {
+		box-shadow: none;
+	}
+}
