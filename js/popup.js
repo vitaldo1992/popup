@@ -40,7 +40,10 @@ $(function() {
 	}
 	$('.multiple_emails-input.text-left').on('keyup focusout focus', restrictEmail);
 	$('.multiple_emails-input.text-left').on('keyup focusout focus', restrictPlaceHolder);
-	$('.form-layout').on('click', restrictEmail)
+	$('.form-layout').on('click', restrictEmail);
+	$('.btns .prev').on('click', function(){
+		$(this).closest('.popup').fadeOut()
+	});
 	// $('#current_emails').text($('#demo').val());
 	// $('#demo').change( function(){
 	// 	$('#current_emails').text($(this).val());
