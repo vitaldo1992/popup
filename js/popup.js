@@ -44,6 +44,12 @@ $(function() {
 	$('.btns .prev').on('click', function(){
 		$(this).closest('.popup').fadeOut()
 	});
+	$('.row').on('click', function() {
+		return false;
+	})
+	$('body').on('click', function() {
+		$(this).find('.popup').fadeOut()
+	});
 	// $('#current_emails').text($('#demo').val());
 	// $('#demo').change( function(){
 	// 	$('#current_emails').text($(this).val());
