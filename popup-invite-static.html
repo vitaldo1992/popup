@@ -1,6 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<link rel="stylesheet" href="js/jQuery-Plugin-For-Email-Address-Management-Multiple-Emails/multiple-emails.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/all-reset.css" type="text/css"/>
@@ -21,6 +22,7 @@
 	<script src="js/registration.js"></script>
 	<script src="js/clipboard.min.js"></script>
 	<script src="js/popup.js"></script>
+	<script src="js/jQuery-Plugin-For-Email-Address-Management-Multiple-Emails/multiple-emails.js"></script>
 	<title>popup-invite-static</title>
 </head>
 <body class="pop-up">
@@ -87,7 +89,8 @@
 						<form>
 							<div class="form-layout">
 								<label class="multi-email-label">Введите e-mail пользователя которого вы хотите пригласить</label>
-								<input type="text" class="input-item" placeholder="Вы можете ввести до 5 e-mail через запятую" />
+								<input type="email" class="input-item" placeholder="Вы можете ввести до 5 e-mail"
+								id="demo" name="email" value='["hello@gmail.com","world@gmail.com"]'/>
 								<div class="plan">
 									<label class="plan-label" for="checkbox-1">
 										<span class="label-text">Прикрепить тарифный план - FREEDOM</span>
@@ -109,7 +112,7 @@
 							</div>
 						</form>
 					</div>
-					<div class="bottom">Введите e-mail пользователя которого вы хотите пригласить</div>
+					<!-- <div class="bottom">Введите e-mail пользователя которого вы хотите пригласить</div> -->
 				</div>
 			</div>
 			<a href="#" class="question"></a>
