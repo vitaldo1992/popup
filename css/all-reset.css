@@ -219,11 +219,10 @@ body.pop-up #main{
 	width:630px;
 	background: #fff;
 	padding: 0 42px;
-	margin: 0 0 30px;
 	border-bottom: 2px solid #f1f2f7;
 }
 .popup .top h4{
-	float: left;
+	text-align: center;
 	margin: 0;
 	color: #121212;
 	font-size: 24px;
@@ -233,15 +232,22 @@ body.pop-up #main{
 .popup form {
 	display: block;
 	overflow: hidden;
-	width:630px;
+	width:100%;
 	background: #fff;
-	padding: 0 42px;
+	padding: 0;
 	background-color: #fff;
 }
-.popup form label{
+.popup .row form .form-layout {
+	width: 100%;
+	height: auto;
+	padding: 43px 42px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+.popup form .form-layout label{
 	width:100%;
 	color: #909090;
-	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
 	padding: 0 0;
@@ -249,8 +255,11 @@ body.pop-up #main{
 	overflow: hidden;
 	text-align: left;
 	margin: 0 0 15px;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
 }
-.popup form p{
+.popup form .form-layout p{
 	width:100%;
 	color: #909090;
 	font-size: 14px;
@@ -263,12 +272,8 @@ body.pop-up #main{
 	text-align: left;
 	margin: 0 0 0;
 }
-.popup form label span{
-	color: #23d28a;
-	font-weight: 700;
-}
-.popup form .pass.margin{margin: 0;}
-.popup form .pass{
+.popup form .form-layout .pass.margin{margin: 0;}
+.popup form .form-layout .pass{
 	width:598px;
 	padding: 0 15px;
 	display: block;
@@ -280,36 +285,35 @@ body.pop-up #main{
 	background: #fff;
 	font-weight: 400;
 	height: 54px;
-	border-radius: 5px;
-	border: 1px solid #f0f2fa;
+	border: 2px solid #f0f2fa;
 	background-color: #fbfbfd;
 	margin: 0 0 30px;
+	outline: none;
 }
-.popup form .pass:focus {border: 1px solid #526acc;}
+.popup form .form-layout .pass:focus {border: 1px solid #526acc; height: 56px; width: 600px;}
 .popup .btns {
 	display: block;
 	overflow: hidden;
 	width: 100%;
-	margin: 0 0 50px;
 }
-.popup form .prev{
+.popup form .form-layout .prev{
 	float: left;
 	text-align: center;
 	cursor: pointer;
-	color: #000;
+	color: #d9dbe3;
 	margin: 0 0 0;
 	border: none;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 54px;
+	line-height: 50px;
 	text-align: center;
 	width: 294px;
 	height: 54px;
-	border-radius: 5px;
-	border: 2px solid #e8e9f2;
-	background-color: #fff;
+	border: 2px solid #d9dbe3;
+	background-color: #ffffff;
+	outline: none;
 }
-.popup form .next{
+.popup form .form-layout .next{
 	float: right;
 	text-align: center;
 	cursor: pointer;
@@ -318,133 +322,27 @@ body.pop-up #main{
 	border: none;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 54px;
+	line-height: 50px;
 	text-align: center;
 	width: 294px;
 	height: 54px;
-	border-radius: 5px;
-	border: 2px solid #23d28a;
 	background-color: #23d28a;
+	outline: none;
 }
-.popup form .next:hover{
+.popup form .form-layout .next:hover{
 	border: 2px solid #21c17f;
 	background-color: #21c17f;
 }
 .popup .line {
 	width: 100%;
 	height: 2px;
-	margin: 22px 0 72px;
 	float: left;
-	background: #dbdbdb;
+	background: #f1f2f7;
 	position: relative;
 	z-index: 1;
-}
-.popup .add{
-	cursor: pointer;
-	float: left;
-	width: 45px;
-	height: 45px;
-	margin:-22px 0 0 42px;
-	position: relative;
-	background-color: #526acc;
-	border: 1px solid #526acc;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	-o-transition: 0.15s ease-in-out;
-	-ms-transition: 0.15s ease-in-out;
-	-moz-transition: 0.15s ease-in-out;
-	-webkit-transition: 0.15s ease-in-out;
-	transition: 0.15s ease-in-out;
-}
-.popup .add.active{
-	background-color:#fff;
-	-o-transition: 0.15s ease-in-out;
-	-ms-transition: 0.15s ease-in-out;
-	-moz-transition: 0.15s ease-in-out;
-	-webkit-transition: 0.15s ease-in-out;
-	transition: 0.15s ease-in-out;
-}
-.popup .add .plus{
-	height:16px; 
-	width:16px; 
-	display:block; 
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	margin: -8px 0 0 -8px;
-	-o-transition: 0.15s ease-in-out;
-	-ms-transition: 0.15s ease-in-out;
-	-moz-transition: 0.15s ease-in-out;
-	-webkit-transition: 0.15s ease-in-out;
-	transition: 0.15s ease-in-out;
-} 
-.popup .add .plus:before,
-.popup .add .plus:after{
-	content: "";
-	position: absolute;
-	background-color:#fff;
-	-o-transition: 0.15s ease-in-out;
-	-ms-transition: 0.15s ease-in-out;
-	-moz-transition: 0.15s ease-in-out;
-	-webkit-transition: 0.15s ease-in-out;
-	transition: 0.15s ease-in-out;
-}
-.popup .add .plus:after{
-	top: 50%;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	margin-top: -1px;
-}
-.popup .add .plus:before{
-	top: 0;
-	left: 50%;
-	width: 2px;
-	height: 100%;
-	margin-left: -1px;
-}
-.popup .add.active .plus:before,
-.popup .add.active .plus:after{
-	background-color:#5c5f95;
-	-o-transition: 0.15s ease-in-out;
-	-ms-transition: 0.15s ease-in-out;
-	-moz-transition: 0.15s ease-in-out;
-	-webkit-transition: 0.15s ease-in-out;
-	transition: 0.15s ease-in-out;
-}
-.popup .add.active .plus { 
-	transform: rotate(135deg); 
-	-o-transition: 0.15s ease-in-out;
-	-ms-transition: 0.15s ease-in-out;
-	-moz-transition: 0.15s ease-in-out;
-	-webkit-transition: 0.15s ease-in-out;
-	transition: 0.15s ease-in-out;
 }
 /****************************************PAY STATIC******************************************/
-.popup-static {
-	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 100;
-}
-.popup-static .bg {
-	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	opacity: 0.65;
-	background-color: #787a82;
-}
-.popup-static .bottom {
+/*.popup-static .bottom {
 	height: 95px;
 	width: 100%;
 	position: absolute;
@@ -458,28 +356,7 @@ body.pop-up #main{
 	font-weight: 400;
 	line-height: 100px;
 	text-align: center;
-}
-.popup-static .row {
-	width: 714px;
-	border-radius: 5px;
-	background-color: #ffffff;
-	margin: 130px auto 0;
-	display: block;
-	overflow: hidden;
-	position: relative;
-	z-index: 10;
-}
-.popup-static .row .top {
-	display: block;
-	margin: auto;
-	text-align: center
-}
-.popup-static .row .top h4 {
-	color: #121212;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 88px;
-}
+}*/
 .popup-static .row .line {
 	width: 100%;
 	height: 2px;
@@ -487,20 +364,6 @@ body.pop-up #main{
 	background: #f1f2f7;
 	position: relative;
 	z-index: 1;
-}
-.popup-static .row form {
-	width: 100%;
-	box-sizing: border-box;
-	height: auto;
-	overflow: hidden;
-}
-.popup-static .row form .form-layout {
-	width: 100%;
-	height: auto;
-	padding: 43px 42px;
-	box-sizing: border-box;
-	position: relative;
-	overflow: hidden;
 }
 .popup-static .row form .form-layout .multi-email-label {
 	width: 100%;
@@ -514,71 +377,35 @@ body.pop-up #main{
 	font-size: 16px;
 	font-weight: 400;
 }
-.popup-static .row form .form-layout .input-item {
-	position: relative;
-	padding: 0 22px;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100px;
-	border: 2px solid #f0f2fa;
-	background-color: #fbfbfd;
-	line-height: 100px;
-}
-.popup-static .row form .form-layout .input-item {
-	background-image: url(../images/email-2048-black.png);
-	background-repeat: no-repeat;
-	background-attachment: absolute;
-	background-position: 95% center;
-}
-.popup-static .row form .form-layout .input-item::-webkit-input-placeholder {
-	color: #939393;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 100px;
-}
-.popup-static .row form .form-layout .input-item::-moz-placeholder {
-	color: #939393;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 100px;
-}
-.popup-static .row form .form-layout .input-item:-ms-input-placeholder {
-	color: #939393;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 100px;
-}
-.popup-static .row form .form-layout .input-item:-moz-placeholder {
-	color: #939393;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 100px;
-}
-.popup-static .row form .form-layout .plan {
+.popup .row form .form-layout .plan {
 	margin-top: 19px;
 	width: 100%;
 	height: 57px;
+	padding-left: 15px;
 	border: 2px solid #f0f2fa;
 	background-color: #fbfbfd;
 	line-height: 57px;
 	box-sizing: border-box;
 }
-.popup-static .row form .form-layout .referal-link {
+.popup .row form .form-layout .plan .plan-label {
+	line-height: 52px;
+}
+.popup .row form .form-layout .referal-link {
 	width: 100%;
 	display: block;
 	position: relative;
 	height: 100px;
+	margin-bottom: 20px;
 	box-sizing: border-box;
 }
-.popup-static .row form .form-layout .referal-link .referal-link-label {
+.popup .row form .form-layout .referal-link .referal-link-label {
 	display: block;
 	color: #000000;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
-	height: 42px;
 }
-.popup-static .row form .form-layout .referal-link .link {
+.popup .row form .form-layout .referal-link .link {
 	float: left;
 	display: block;
 	width: 450px;
@@ -605,7 +432,7 @@ body.pop-up #main{
 	-ms-user-select: none;
 	user-select: none;
 }
-.popup-static .row form .form-layout .referal-link .copy-link {
+.popup .row form .form-layout .referal-link .copy-link {
 	float: left;
 	display: block;
 	width: 178px;
@@ -626,55 +453,14 @@ body.pop-up #main{
 	cursor: pointer;
 	outline: none;
 }
-.popup-static .row form .form-layout .referal-link .copy-link:hover {
+.popup .row form .form-layout .referal-link .copy-link:hover {
 	background-color: #3fb5d6;
 }
-.popup-static .row form .form-layout .referal-link .copy-link:active {
+.popup .row form .form-layout .referal-link .copy-link:active {
 	box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.1);
 	background-color: #3fb5d6;
 }
-.popup-static .row form .form-layout .btns {
-	display: block;
-	margin-top: 30px;
-}
-.popup-static .row form .form-layout .btns .prev{
-	float: left;
-	text-align: center;
-	cursor: pointer;
-	color: #d9dbe3;
-	margin: 0 0 0;
-	border: none;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 50px;
-	text-align: center;
-	width: 294px;
-	height: 54px;
-	border: 2px solid #e8e9f2;
-	background-color: #fff;
-}
-.popup-static .row form .form-layout .btns .next{
-	float: right;
-	text-align: center;
-	cursor: pointer;
-	color: #fff;
-	margin: 0;
-	border: none;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 50px;
-	text-align: center;
-	width: 294px;
-	height: 54px;
-	border: 2px solid #23d28a;
-	background-color: #23d28a;
-	outline: none;
-}
-.popup-static .row form .form-layout .btns .next:hover{
-	border: 2px solid #21c17f;
-	background-color: #21c17f;
-}
-.popup-static .row form .form-layout .ui-button .ui-icon {
+.popup .row form .form-layout .ui-button .ui-icon {
 	background-image: url(../images/success-icon-10-copy.png);
 	background-position: 0px -150px;
 	width: 25px;
@@ -682,41 +468,40 @@ body.pop-up #main{
 	border-radius: 25px;
 	border: none;
 }
-.popup-static .row form .form-layout .ui-state-checked {
+.popup .row form .form-layout .ui-state-checked {
 
 }
-.popup-static .row form .form-layout .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+.popup .row form .form-layout .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
 	background: inherit;
 	font-weight: normal;
 	color: #45c4e7;
 	border: none;
 	box-shadow: none;
 }
-
-.popup-static .row form .form-layout .ui-checkboxradio-label .ui-icon-background {
+.popup .row form .form-layout .ui-checkboxradio-label .ui-icon-background {
 	box-shadow: inset 0 2px 1px 1px rgba(0, 0, 0, 0.16);
 	border: none;
 	width: 25px;
 	height: 25px;
 	border-radius: 25px;
 }
-.popup-static .row form .ui-checkboxradio-label {
+.popup .row form .ui-checkboxradio-label {
 	border: none;
 	background-color: inherit;
 	cursor: default;
 }
-.popup-static .row form .ui-checkboxradio-label .ui-checkboxradio-icon {
+.popup .row form .ui-checkboxradio-label .ui-checkboxradio-icon {
 	background-color: #f0f2fa;
 }
-.popup-static .row form .ui-checkboxradio-label .ui-checkboxradio-icon.ui-state-checked {
+.popup .row form .ui-checkboxradio-label .ui-checkboxradio-icon.ui-state-checked {
 	box-shadow: none;
 }
-.popup-static .row form .form-layout .ui-checkboxradio-label .ui-checkboxradio-icon-space {
+.popup .row form .form-layout .ui-checkboxradio-label .ui-checkboxradio-icon-space {
 	width: 22px;
 	display: inline-block;
 }
 
-.popup-static .row form  .ui-state-focus, .ui-visual-focus {
+.popup .row form  .ui-state-focus, .ui-visual-focus {
 	border: none;
 	box-shadow: none;
 }
@@ -793,7 +578,7 @@ body.pop-up #main{
 	line-height: 100px;
 }
 
-@media (max-width: 1400px) {
+/*@media (max-width: 1400px) {
 	.popup-static .bottom {
 		height: 60px;
 		line-height: 65px;
@@ -894,4 +679,4 @@ body.pop-up #main{
 	.popup-static .row form .ui-checkboxradio-label .ui-checkboxradio-icon.ui-state-checked {
 		box-shadow: none;
 	}
-}
+}*/
